@@ -2,50 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>first entry</title>
+  <title>first entry — absolute derry</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="noise"></div>
+<body class="fade-in mood-numb">
 
-<div class="container single">
+<div class="container">
 
-  <article class="post-full">
+  <!-- ========================= -->
+  <!-- POST HEADER -->
+  <!-- ========================= -->
+  <header class="post-header">
+    <h1>first entry</h1>
 
-    <header class="post-header">
-      <div class="post-date">december 30, 2025 · <span class="ago">87 days ago</span></div>
-      <h1 class="post-title">first entry</h1>
+    <div class="post-meta">
+      <span class="date" data-date="2025-12-30">
+        december 30, 2025
+      </span>
+      <span class="separator">·</span>
+      <span class="age">posted <span class="days"></span> days ago</span>
+      <span class="separator">·</span>
+      <span class="mood-label">mood: numb</span>
+    </div>
+  </header>
 
-      <div class="post-meta-extra">
-        <span class="mood">mood: numb</span>
-        <span class="tags">#existence #silence #night</span>
-      </div>
-    </header>
+  <!-- ========================= -->
+  <!-- POST BODY -->
+  <!-- ========================= -->
+  <article class="post-body">
 
-    <section class="post-content">
-      <p>
-        sometimes existing is enough.<br>
-        not everything needs a reason.
-      </p>
+    <p class="opening">
+      sometimes existing is enough.<br>
+      not everything needs a reason.
+    </p>
 
-      <p>
-        nights don’t scare me anymore.<br>
-        they just remind me that time is still moving.
-      </p>
+    <p>
+      there are days when nothing hurts,
+      but nothing feels alive either.
+      the silence doesn’t scream —
+      it just stays.
+    </p>
 
-      <p class="aside">
-        this wasn’t meant to be read loudly.
-      </p>
-    </section>
+    <p>
+      i don’t call this sadness.<br>
+      it’s closer to neutrality,
+      stretched too far.
+    </p>
 
-    <footer class="post-footer">
-      <a href="index.html" class="back">← back</a>
-    </footer>
+    <blockquote>
+      maybe consciousness itself is the sickness.
+    </blockquote>
+
+    <p>
+      i write these things not to be understood,
+      but to remain traceable.
+    </p>
 
   </article>
 
+  <!-- ========================= -->
+  <!-- TAGS -->
+  <!-- ========================= -->
+  <section class="post-tags">
+    <span>#existence</span>
+    <span>#silence</span>
+    <span>#record</span>
+  </section>
+
+  <!-- ========================= -->
+  <!-- POST FOOTER -->
+  <!-- ========================= -->
+  <footer class="post-footer">
+    <a href="index.html" class="back-link">← back to index</a>
+  </footer>
+
 </div>
+
+<script>
+  const dateEl = document.querySelector(".date");
+  const daysEl = document.querySelector(".days");
+  const postDate = new Date(dateEl.dataset.date);
+  const now = new Date();
+  const diff = Math.floor((now - postDate) / 86400000);
+  daysEl.textContent = diff;
+</script>
 
 </body>
 </html>
