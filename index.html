@@ -1,98 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- ========================= -->
+  <!-- BASIC META -->
+  <!-- ========================= -->
   <meta charset="UTF-8">
-  <title>absolutederry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- favicon & icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- ========================= -->
+  <!-- SITE TITLE -->
+  <!-- ========================= -->
+  <title>absolute derry — personal archive</title>
 
-  <!-- css -->
+  <!-- ========================= -->
+  <!-- FAVICON -->
+  <!-- ========================= -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- ========================= -->
+  <!-- STYLES -->
+  <!-- ========================= -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- ========================= -->
+  <!-- NOSTALGIC INLINE TOUCHES -->
+  <!-- ========================= -->
+  <style>
+    body {
+      cursor: url("cursor.cur"), auto;
+    }
+  </style>
+
 </head>
 
-<body>
+<body class="fade-in mood-default">
 
+<!-- ========================= -->
+<!-- LANGUAGE SELECT OVERLAY -->
+<!-- ========================= -->
+<div id="language-overlay">
+  <div class="lang-box">
+    <h2>choose your language</h2>
+    <p>
+      this site adapts its voice.<br>
+      meaning stays the same.
+    </p>
+    <button onclick="setLang('en')">english</button>
+    <button onclick="setLang('tr')">türkçe</button>
+    <button onclick="setLang('pl')">polski</button>
+  </div>
+</div>
+
+<!-- ========================= -->
+<!-- MAIN CONTAINER -->
+<!-- ========================= -->
 <div class="container">
 
-  <!-- MAIN BLOG -->
-  <div class="blog">
+  <!-- ========================= -->
+  <!-- HEADER -->
+  <!-- ========================= -->
+  <header class="site-header">
+    <h1>absolute derry</h1>
 
-    <div class="post">
-      <div class="date">december 30, 2025</div>
+    <p class="subtitle">
+      existing, not living<br>
+      observing, not participating
+    </p>
 
-      <h2>
-        <a href="post1.html">
-          first entry
-        </a>
-      </h2>
+    <p class="updated">
+      last updated:
+      <span id="lastUpdated">calculating…</span>
+    </p>
+  </header>
 
-      <p>
-        sometimes existing is enough.<br>
-        not everything needs a reason.
-      </p>
-    </div>
+  <!-- ========================= -->
+  <!-- MAIN LAYOUT -->
+  <!-- ========================= -->
+  <div class="layout">
 
-    <div class="post">
-      <div class="date">january 2, 2026</div>
+    <!-- ========================= -->
+    <!-- CONTENT AREA -->
+    <!-- ========================= -->
+    <main id="posts-area">
 
-      <h2>
-        <a href="post2.html">
-          untitled
-        </a>
-      </h2>
+      <!-- intro text -->
+      <section class="intro">
+        <p>
+          this is not a feed.<br>
+          this is a record.
+        </p>
+        <hr>
+      </section>
 
-      <p>
-        i didn’t plan to write this.<br>
-        it just happened.
-      </p>
-    </div>
+      <!-- posts injected by JS -->
+      <section id="posts">
+        <!-- posts.js will populate this -->
+      </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+    <aside class="sidebar">
+
+      <!-- ========================= -->
+      <!-- RECENT ENTRIES -->
+      <!-- ========================= -->
+      <div class="sidebar-box blue">
+        <h3>recent entries</h3>
+        <ul id="recent">
+          <!-- filled by JS -->
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- TAG FILTER -->
+      <!-- ========================= -->
+      <div class="sidebar-box blue">
+        <h3>filter by tag</h3>
+        <div id="tagFilter">
+          <!-- tags injected by JS -->
+        </div>
+      </div>
+
+      <!-- ========================= -->
+      <!-- NAVIGATION -->
+      <!-- ========================= -->
+      <div class="sidebar-box blue">
+        <h3>navigation</h3>
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="archive.html">archive</a></li>
+          <li><a href="index.html">home</a></li>
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- NOW PLAYING -->
+      <!-- ========================= -->
+      <div class="sidebar-box blue">
+        <h3>now playing</h3>
+        <iframe
+          src="https://open.spotify.com/embed/track/5VPaXkoOt3rJbVNa1j5wmy"
+          width="100%"
+          height="80"
+          frameborder="0"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+
+      <!-- ========================= -->
+      <!-- FOOTNOTE -->
+      <!-- ========================= -->
+      <div class="sidebar-box subtle">
+        <small>
+          archived thoughts.<br>
+          nothing expires.
+        </small>
+      </div>
+
+    </aside>
 
   </div>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-
-    <div class="sidebar-box">
-      <h3>status</h3>
-      <p>observing, not participating</p>
-    </div>
-
-    <div class="sidebar-box">
-      <h3>recent entries</h3>
-      <ul>
-        <li><a href="post1.html">first entry</a></li>
-        <li><a href="post2.html">untitled</a></li>
-      </ul>
-    </div>
-
-    <div class="sidebar-box">
-      <h3>navigation</h3>
-      <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="archive.html">archive</a></li>
-      </ul>
-    </div>
-
-    <div class="sidebar-box">
-      <h3>now playing</h3>
-      <iframe
-        src="https://open.spotify.com/embed/track/5VPaXkoOt3rJbVNa1j5wmy"
-        width="100%"
-        height="80"
-        frameborder="0"
-        allow="encrypted-media">
-      </iframe>
-    </div>
-
-  </div>
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+  <footer class="site-footer">
+    <p>
+      © absolute derry<br>
+      some things stay even when people leave.
+    </p>
+  </footer>
 
 </div>
 
+<!-- ========================= -->
+<!-- SCRIPTS -->
+<!-- ========================= -->
+<script src="posts.js"></script>
+
 </body>
 </html>
-
-
