@@ -1,0 +1,159 @@
+/* -------- BASE -------- */
+
+body {
+  background: #0b0b0f;
+  color: #fff;
+  font-family: "Trebuchet MS", Verdana, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* -------- LAYOUT -------- */
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #f2a1c7;
+  font-weight: normal;
+}
+
+.subtitle {
+  color: #ccc;
+}
+
+.updated {
+  font-size: 12px;
+  color: #888;
+}
+
+.layout {
+  display: flex;
+}
+
+main {
+  width: 65%;
+}
+
+/* -------- POSTS -------- */
+
+.post-preview {
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: slowAppear 1.5s forwards;
+}
+
+@keyframes slowAppear {
+  to { opacity: 1; }
+}
+
+.post-meta {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.mood {
+  margin-left: 10px;
+  font-style: italic;
+}
+
+/* mood colors */
+.mood-numb { background: #1b1b2f; }
+.mood-detached { background: #1a2a3a; }
+.mood-melancholic { background: #2a1b2f; }
+
+.tags span {
+  color: #7fd7ff;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.tags span:hover {
+  text-shadow: 0 0 6px #7fd7ff;
+}
+
+/* -------- SIDEBAR -------- */
+
+.sidebar {
+  width: 35%;
+  padding-left: 30px;
+}
+
+.sidebar-box {
+  margin-bottom: 25px;
+  padding: 10px;
+  background: #111;
+}
+
+.sidebar-box.blue h3 {
+  color: #7fd7ff;
+}
+
+.sidebar a {
+  color: #7fd7ff;
+}
+
+/* -------- LINKS -------- */
+
+a {
+  color: #f2a1c7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd1e8;
+  text-shadow: 0 0 5px #f2a1c7;
+}
+
+/* -------- LANGUAGE OVERLAY -------- */
+
+#language-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lang-box {
+  background: #111;
+  padding: 30px;
+  text-align: center;
+}
+
+.lang-box button {
+  background: none;
+  border: 1px solid #f2a1c7;
+  color: #f2a1c7;
+  margin: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.lang-box button:hover {
+  background: #f2a1c7;
+  color: #000;
+}
+
+/* -------- CURSOR SOUND (HOOK) -------- */
+
+a:hover::after {
+  content: "";
+}
