@@ -1,4 +1,4 @@
-# absolute derry — personal archive v1.1
+# Absolute Derry — Personal Archive v1.2
 
 A static multilingual personal blog for GitHub Pages. It uses plain HTML, CSS and JavaScript, so there is no build step.
 
@@ -10,15 +10,15 @@ A static multilingual personal blog for GitHub Pages. It uses plain HTML, CSS an
 - Language switcher that remembers the visitor's choice
 - Journal with search, tags, random entry and post dialog
 - Photography gallery with placeholders
-- Linux / operating systems page
-- Games and films diary
+- My Systems page
+- Separate Games I Played, Movies I Watched, and Series + Anime I Watched rooms
 - Fictional characters page
 - Daily Spotify or local MP3 player plus song archive
 - Editable personal/social link directory
 - Now page and site changelog
 - Projects page with live GitHub repository cards
 - Responsive mobile layout
-- Optional CRT scanline/noise effect
+- CRT is OFF by default; ON mode adds strong scanlines, noise, vignette, flicker and chromatic separation
 - Local device visit counter; it is not a global visitor counter
 
 ## Install on GitHub Pages
@@ -31,7 +31,7 @@ cd absolutederry.github.io
 
 # Copy the new files into this folder, then:
 git add .
-git commit -m "Rebuild personal archive v1.1"
+git commit -m "Revise personal archive v1.2"
 git push origin main
 ```
 
@@ -139,3 +139,13 @@ location.reload();
 The profile avatar is currently an original CSS placeholder. Replace the `.avatar` element in `index.html` with your own image later.
 
 The sample posts, music, media entries, status and descriptions are starter content. Rewrite them directly in `content.js` as the archive grows.
+
+
+## v1.2 revision notes
+
+- The original colour palette is intentionally locked. Do not alter the variables under `:root` unless Derry explicitly asks for a palette change.
+- CRT begins **OFF** on first visit. `CRT: ON` now adds stronger scanlines, noise, vignette, flicker and chromatic text separation.
+- Profile image: `assets/photos/profile-milk-chan.jpg`.
+- Public name: **Derry**; handle: **@AbsoluteDerry**.
+- The home archive contains eight grouped rooms: Games, Movies, Series + Anime, Photography, Systems, Fictional Selves, Links and Music.
+- English, Turkish and Polish remain supported.

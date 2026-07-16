@@ -1,3 +1,7 @@
+/*
+  PALETTE LOCK — approved by Derry on 2026-07-16.
+  Do not alter these colour variables unless Derry explicitly requests it.
+*/
 :root {
   color-scheme: dark;
   --bg: #07050a;
@@ -92,7 +96,8 @@ input:focus-visible {
 }
 
 .screen-noise,
-.scanlines {
+.scanlines,
+.crt-vignette {
   position: fixed;
   inset: 0;
   z-index: 9000;
@@ -100,19 +105,81 @@ input:focus-visible {
 }
 
 .screen-noise {
-  opacity: 0.045;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+  opacity: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");
 }
 
 .scanlines {
-  opacity: 0.13;
-  background: repeating-linear-gradient(to bottom, transparent 0 3px, rgba(0, 0, 0, 0.7) 4px);
+  opacity: 0;
+  background: repeating-linear-gradient(to bottom, transparent 0 2px, rgba(0, 0, 0, 0.86) 3px, rgba(0, 0, 0, 0.86) 4px);
   mix-blend-mode: multiply;
 }
 
 .crt-disabled .screen-noise,
 .crt-disabled .scanlines {
   display: none;
+}
+
+.crt-enabled::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 8999;
+  pointer-events: none;
+  border-radius: 2.2% / 1.2%;
+  box-shadow:
+    inset 0 0 55px rgba(0, 0, 0, 0.78),
+    inset 0 0 150px rgba(0, 0, 0, 0.72),
+    inset 0 0 260px rgba(0, 0, 0, 0.42);
+}
+
+.crt-enabled .screen-noise {
+  display: block;
+  opacity: 0.105;
+  animation: crt-noise-jump 180ms steps(2, end) infinite;
+}
+
+.crt-enabled .scanlines {
+  display: block;
+  opacity: 0.27;
+  animation: crt-scan-drift 7s linear infinite;
+}
+
+.crt-enabled .page-shell,
+.crt-enabled .system-bar {
+  filter: contrast(1.1) brightness(0.92) saturate(0.88);
+}
+
+.crt-enabled .page-shell {
+  animation: crt-flicker 5.5s steps(1, end) infinite;
+}
+
+.crt-enabled h1,
+.crt-enabled h2,
+.crt-enabled h3,
+.crt-enabled a,
+.crt-enabled button,
+.crt-enabled .panel-title {
+  text-shadow: -1px 0 rgba(136, 215, 221, 0.34), 1px 0 rgba(239, 154, 196, 0.3);
+}
+
+@keyframes crt-noise-jump {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-1.5%, 0.8%); }
+  50% { transform: translate(1%, -1.2%); }
+  75% { transform: translate(0.6%, 1.1%); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes crt-scan-drift {
+  from { background-position: 0 0; }
+  to { background-position: 0 28px; }
+}
+
+@keyframes crt-flicker {
+  0%, 8%, 11%, 43%, 46%, 100% { opacity: 1; }
+  9% { opacity: 0.965; }
+  44% { opacity: 0.975; }
 }
 
 .system-bar {
@@ -1681,4 +1748,67 @@ blockquote {
 
 .language-gate[hidden] {
   display: none !important;
+}
+
+
+/* v1.2: profile image, grouped archive rooms and intentional capitalization */
+.avatar {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  background: var(--panel-alt);
+}
+
+.avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
+  filter: saturate(0.82) contrast(1.06) brightness(0.9);
+}
+
+.portal-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+
+.portal-group {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 7px;
+  min-width: 0;
+}
+
+.portal-group__title {
+  margin: 0;
+  border-left: 2px solid var(--line-bright);
+  padding: 0.28rem 0.55rem;
+  color: var(--cyan);
+  background: rgba(10, 9, 18, 0.62);
+  font: 9px/1.35 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portal-stack {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(78px, 1fr));
+  gap: 10px;
+}
+
+.portal-stack .portal {
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .portal-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-stack {
+    grid-template-rows: none;
+  }
 }

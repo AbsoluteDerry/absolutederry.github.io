@@ -14,62 +14,74 @@
 
   const translations = {
     en: {
-      skipToContent: "skip to content",
-      systemMessage: "personal archive mounted read-only",
+      skipToContent: "Skip to Content",
+      systemMessage: "Personal Archive Mounted Read-Only",
       heroEyebrow: "WELCOME TO MY CORNER OF THE OLD WEB",
-      heroTaglineA: "existing, not living",
-      heroTaglineB: "observing, not participating",
+      heroTaglineA: "Existing, Not Living",
+      heroTaglineB: "Observing, Not Participating",
       archive: "ARCHIVE",
       online: "ONLINE",
-      navHome: "home",
-      navJournal: "journal",
-      navPhotos: "photos",
-      navPhotography: "photography",
-      navLinux: "linux",
-      navLinuxSystems: "linux / systems",
-      navMedia: "media",
-      navGamesFilms: "games + films",
-      navCharacters: "characters",
-      navFictionalSelves: "fictional selves",
-      navMusic: "music",
-      navLinks: "links",
-      navProjects: "projects",
-      navNow: "now",
-      navAbout: "about",
-      profileName: "name",
-      profileLanguages: "languages",
-      profileLocation: "location",
-      profileOccupation: "occupation",
-      profileOccupationValue: "game design student",
-      statusLabel: "status:",
-      allLinks: "all links →",
-      moodLabel: "mood",
-      playingLabel: "playing",
-      localTimeLabel: "local time",
-      visitsLabel: "visits here",
-      onThisDevice: "on this device",
-      openNowPage: "open now page →",
-      musicArchive: "music archive →",
-      randomDescription: "open a random fragment from the journal.",
-      randomPost: "random entry ↝",
+      navHome: "Home",
+      navJournal: "Journal",
+      navPhotos: "Photos",
+      navPhotography: "Photography",
+      navLinux: "Linux",
+      navLinuxSystems: "My Systems",
+      navMedia: "Media",
+      navGames: "Games I Played",
+      navMovies: "Movies I Watched",
+      navSeries: "Series + Anime I Watched",
+      navSystems: "My Systems",
+      navMusicRoom: "Music Room",
+      navMyLinks: "My Links",
+      navGamesFilms: "Games + Films",
+      navCharacters: "Characters",
+      navFictionalSelves: "My Fictional Selves",
+      navMusic: "Music",
+      navLinks: "Links",
+      navProjects: "Projects",
+      navNow: "Now",
+      navAbout: "About",
+      profileName: "Name",
+      profileLanguages: "Languages",
+      profileLocation: "Location",
+      profileOccupation: "Occupation",
+      profileOccupationValue: "Game Design Student",
+      statusLabel: "Status:",
+      allLinks: "All Links →",
+      moodLabel: "Mood",
+      playingLabel: "Playing",
+      localTimeLabel: "Local Time",
+      visitsLabel: "Visits Here",
+      onThisDevice: "On This Device",
+      openNowPage: "Open Now Page →",
+      musicArchive: "Music Archive →",
+      randomDescription: "Open a random fragment from the journal.",
+      randomPost: "Random Entry ↝",
       footerMain: "Hand-coded. No feed. No algorithm. No expiration date.",
-      footerNote: "best experienced alone, after midnight, with headphones.",
-      routeHome: "home",
-      routeJournal: "journal",
-      routePhotos: "photography",
-      routeLinux: "linux / systems",
-      routeMedia: "games + films",
-      routeCharacters: "fictional selves",
-      routeMusic: "music room",
-      routeLinks: "links",
-      routeProjects: "projects",
-      routeNow: "now",
-      routeAbout: "about",
+      footerNote: "Best experienced alone, after midnight, with headphones.",
+      routeHome: "Home",
+      routeJournal: "Journal",
+      routePhotos: "Photography",
+      routeLinux: "My Systems",
+      routeMedia: "Games I Played",
+      routeGames: "Games I Played",
+      routeMovies: "Movies I Watched",
+      routeSeries: "Series + Anime I Watched",
+      routeCharacters: "My Fictional Selves",
+      routeMusic: "Music Room",
+      routeLinks: "My Links",
+      routeProjects: "Projects",
+      routeNow: "Now",
+      routeAbout: "About",
       subtitleHome: "a personal archive for things that do not belong in a feed.",
       subtitleJournal: "dated fragments, unfinished thoughts and records of being here.",
       subtitlePhotos: "the city after people stop looking at it.",
       subtitleLinux: "the machines i use, rebuild and occasionally break.",
-      subtitleMedia: "stories, rooms and images that stayed after the screen went dark.",
+      subtitleMedia: "Stories, rooms and images that stayed after the screen went dark.",
+      subtitleGames: "Games I finished, abandoned, returned to, or carried with me.",
+      subtitleMovies: "Films that stayed visible after the screen went dark.",
+      subtitleSeries: "Longer stories and animated worlds preserved in the archive.",
       subtitleCharacters: "characters are sometimes mirrors with better lighting.",
       subtitleMusic: "one song for today, older songs kept like dated memories.",
       subtitleLinks: "doors leading to the other places where i exist online.",
@@ -79,114 +91,130 @@
       readMeFirst: "read_me_first.txt",
       roomNotFeed: "this is not a feed. this is a room.",
       manifesto: "I keep photographs, operating systems, games, films, unfinished thoughts, music and fictional people here. Nothing is ranked. Nothing is optimised. Things appear because they mattered to me.",
-      latestTransmission: "latest transmission",
-      viewFullJournal: "view full journal",
-      recentFragments: "recent fragments",
-      roomsInArchive: "rooms in the archive",
+      latestTransmission: "Latest Transmission",
+      viewFullJournal: "View Full Journal",
+      recentFragments: "Recent Fragments",
+      roomsInArchive: "Rooms in the Archive",
       portalPhotography: "night streets, monuments, witnesses",
       portalLinux: "machines made personal",
-      portalMedia: "horror, ruins, memory",
+      portalMedia: "Horror, ruins, memory",
+      portalGames: "Finished, unfinished, remembered",
+      portalMovies: "Frames that refused to disappear",
+      portalSeries: "Episodes, seasons, animated worlds",
+      portalGroupWatched: "Played / Watched / Captured",
+      portalGroupMine: "My Rooms",
       portalCharacters: "people i recognise from inside",
       portalMusic: "a daily track and its remains",
       portalLinks: "the rest of my internet",
-      openEntry: "open entry",
-      moodPrefix: "mood:",
-      searchArchive: "search archive",
+      openEntry: "Open Entry",
+      moodPrefix: "Mood:",
+      searchArchive: "Search Archive",
       searchPlaceholder: "type a title, mood or word...",
       allTag: "#all",
-      nothingFound: "nothing found",
+      nothingFound: "Nothing Found",
       noMatchingFragment: "the archive has no matching fragment.",
-      uploadNote: "upload note:",
+      uploadNote: "Upload Note:",
       uploadPhotoHelp: "put your images inside assets/photos/, then write the file path in content.js.",
-      gameDiary: "game diary",
-      filmDiary: "film diary",
-      records: "records",
-      openProject: "open project",
-      privateNotLinked: "private / not linked",
-      recentGithub: "recent github repositories",
-      githubProfile: "github profile ↗",
-      contactingGithub: "contacting github api...",
+      gameDiary: "Games I Played",
+      filmDiary: "Movies I Watched",
+      seriesDiary: "Series + Anime I Watched",
+      emptyMediaRoom: "This room is ready for the titles you will add later in content.js.",
+      records: "Records",
+      openProject: "Open Project",
+      privateNotLinked: "Private / Not Linked",
+      recentGithub: "Recent GitHub Repositories",
+      githubProfile: "GitHub Profile ↗",
+      contactingGithub: "Contacting GitHub API...",
       githubUnavailable: "GitHub could not be reached right now. The hand-written project cards above still work.",
-      noDescription: "no description written yet.",
-      dailyTransmission: "daily transmission",
+      noDescription: "No description written yet.",
+      dailyTransmission: "Daily Transmission",
       playerSpotifyHelp: "Spotify mode is active. Change spotifyEmbedUrl in content.js whenever you want a different daily song.",
       playerMp3Help: "MP3 mode is active. Put the file in assets/music/ and set mp3Src in content.js.",
-      musicHistory: "song archive",
-      noLink: "link not added yet",
-      visit: "visit",
-      linkInstructionsTitle: "editing links",
+      musicHistory: "Song Archive",
+      noLink: "Link Not Added Yet",
+      visit: "Visit",
+      linkInstructionsTitle: "Editing Links",
       linkInstructions: "Open content.js and edit linkCategories. Empty URL fields appear as disabled placeholders until you add your real links.",
       currentSnapshot: "current_snapshot.txt",
-      watchingLabel: "watching",
-      readingLabel: "reading",
-      workingOnLabel: "working on",
-      lastUpdatedLabel: "last updated",
-      siteChangelog: "site changelog",
-      aboutExisting: "existing, not living",
-      aboutParagraph1: "I am Derin, also known online as AbsoluteDerry. I study Game Design and Development, photograph cities at night, rebuild computers until they feel like mine, and collect stories that turn loneliness into architecture.",
-      aboutWhy: "why this place exists",
+      watchingLabel: "Watching",
+      readingLabel: "Reading",
+      workingOnLabel: "Working On",
+      lastUpdatedLabel: "Last Updated",
+      siteChangelog: "Site Changelog",
+      aboutExisting: "Existing, Not Living",
+      aboutParagraph1: "I am Derry, also known online as AbsoluteDerry. I study Game Design and Development, photograph cities at night, rebuild computers until they feel like mine, and collect stories that turn loneliness into architecture.",
+      aboutWhy: "Why This Place Exists",
       aboutParagraph2: "Platforms flatten people into profiles and posts into units of attention. A personal website can still have rooms, dead ends, unfinished walls and objects that exist without asking to be promoted.",
-      aboutWhat: "what belongs here",
+      aboutWhat: "What Belongs Here",
       aboutParagraph3: "Linux notes. Operating systems. Photographs. Games and films. Music. Links. Fictional characters I recognise myself in. Development projects. Diary entries that may not make sense later.",
       aboutQuote: "this site exists as an archive. not a performance. not a brand.",
       colophon: "Built with plain HTML, CSS and JavaScript. Hosted on GitHub Pages. No framework, analytics, advertisements or tracking scripts.",
-      journalEntry: "journal entry",
+      journalEntry: "Journal Entry",
       closePost: "Close post",
-      unknownSong: "untitled song",
-      listen: "listen ↗"
+      unknownSong: "Untitled Song",
+      listen: "Listen ↗"
     },
     tr: {
-      skipToContent: "içeriğe geç",
-      systemMessage: "kişisel arşiv salt okunur olarak bağlandı",
+      skipToContent: "İçeriğe Geç",
+      systemMessage: "Kişisel Arşiv Salt Okunur Olarak Bağlandı",
       heroEyebrow: "ESKİ İNTERNETTEKİ KÖŞEME HOŞ GELDİN",
-      heroTaglineA: "yaşamak değil, var olmak",
-      heroTaglineB: "katılmak değil, izlemek",
+      heroTaglineA: "Yaşamak Değil, Var Olmak",
+      heroTaglineB: "Katılmak Değil, İzlemek",
       archive: "ARŞİV",
       online: "ÇEVRİMİÇİ",
-      navHome: "ana sayfa",
-      navJournal: "günlük",
-      navPhotos: "fotoğraflar",
-      navPhotography: "fotoğrafçılık",
-      navLinux: "linux",
-      navLinuxSystems: "linux / sistemler",
-      navMedia: "medya",
-      navGamesFilms: "oyunlar + filmler",
-      navCharacters: "karakterler",
-      navFictionalSelves: "kurgusal benlikler",
-      navMusic: "müzik",
-      navLinks: "bağlantılar",
-      navProjects: "projeler",
-      navNow: "şimdi",
-      navAbout: "hakkımda",
-      profileName: "isim",
-      profileLanguages: "diller",
-      profileLocation: "konum",
-      profileOccupation: "uğraş",
-      profileOccupationValue: "oyun tasarımı öğrencisi",
-      statusLabel: "durum:",
-      allLinks: "tüm bağlantılar →",
-      moodLabel: "ruh hâli",
-      playingLabel: "oynuyorum",
-      localTimeLabel: "yerel saat",
-      visitsLabel: "buradaki ziyaret",
-      onThisDevice: "bu cihazda",
-      openNowPage: "şimdi sayfasını aç →",
-      musicArchive: "müzik arşivi →",
-      randomDescription: "günlükten rastgele bir parça aç.",
-      randomPost: "rastgele kayıt ↝",
+      navHome: "Ana Sayfa",
+      navJournal: "Günlük",
+      navPhotos: "Fotoğraflar",
+      navPhotography: "Fotoğrafçılık",
+      navLinux: "Linux",
+      navLinuxSystems: "Sistemlerim",
+      navMedia: "Medya",
+      navGames: "Oynadığım Oyunlar",
+      navMovies: "İzlediğim Filmler",
+      navSeries: "İzlediğim Diziler + Animeler",
+      navSystems: "Sistemlerim",
+      navMusicRoom: "Müzik Odası",
+      navMyLinks: "Bağlantılarım",
+      navGamesFilms: "Oyunlar + Filmler",
+      navCharacters: "Karakterler",
+      navFictionalSelves: "Kurgusal Benliklerim",
+      navMusic: "Müzik",
+      navLinks: "Bağlantılar",
+      navProjects: "Projeler",
+      navNow: "Şimdi",
+      navAbout: "Hakkımda",
+      profileName: "İsim",
+      profileLanguages: "Diller",
+      profileLocation: "Konum",
+      profileOccupation: "Uğraş",
+      profileOccupationValue: "Oyun Tasarımı Öğrencisi",
+      statusLabel: "Durum:",
+      allLinks: "Tüm Bağlantılar →",
+      moodLabel: "Ruh Hâli",
+      playingLabel: "Oynuyorum",
+      localTimeLabel: "Yerel Saat",
+      visitsLabel: "Buradaki Ziyaret",
+      onThisDevice: "Bu Cihazda",
+      openNowPage: "Şimdi Sayfasını Aç →",
+      musicArchive: "Müzik Arşivi →",
+      randomDescription: "Günlükten rastgele bir parça aç.",
+      randomPost: "Rastgele Kayıt ↝",
       footerMain: "Elle kodlandı. Akış yok. Algoritma yok. Son kullanma tarihi yok.",
-      footerNote: "en iyi gece yarısından sonra, yalnız ve kulaklıkla deneyimlenir.",
-      routeHome: "ana sayfa",
-      routeJournal: "günlük",
-      routePhotos: "fotoğrafçılık",
-      routeLinux: "linux / sistemler",
-      routeMedia: "oyunlar + filmler",
-      routeCharacters: "kurgusal benlikler",
-      routeMusic: "müzik odası",
-      routeLinks: "bağlantılar",
-      routeProjects: "projeler",
-      routeNow: "şimdi",
-      routeAbout: "hakkımda",
+      footerNote: "En iyi gece yarısından sonra, yalnız ve kulaklıkla deneyimlenir.",
+      routeHome: "Ana Sayfa",
+      routeJournal: "Günlük",
+      routePhotos: "Fotoğrafçılık",
+      routeLinux: "Sistemlerim",
+      routeMedia: "Oynadığım Oyunlar",
+      routeGames: "Oynadığım Oyunlar",
+      routeMovies: "İzlediğim Filmler",
+      routeSeries: "İzlediğim Diziler + Animeler",
+      routeCharacters: "Kurgusal Benliklerim",
+      routeMusic: "Müzik Odası",
+      routeLinks: "Bağlantılarım",
+      routeProjects: "Projeler",
+      routeNow: "Şimdi",
+      routeAbout: "Hakkımda",
       subtitleHome: "bir akışa ait olmayan şeyler için kişisel arşiv.",
       subtitleJournal: "tarihli parçalar, yarım düşünceler ve burada oluşumun kayıtları.",
       subtitlePhotos: "insanlar bakmayı bıraktıktan sonraki şehir.",
@@ -201,91 +229,104 @@
       readMeFirst: "önce_bunu_oku.txt",
       roomNotFeed: "burası bir akış değil. bir oda.",
       manifesto: "Fotoğrafları, işletim sistemlerini, oyunları, filmleri, yarım düşünceleri, müziği ve kurgusal insanları burada tutuyorum. Hiçbir şey sıralanmıyor. Hiçbir şey optimize edilmiyor. Şeyler yalnızca benim için önemli oldukları için burada.",
-      latestTransmission: "son yayın",
-      viewFullJournal: "tüm günlüğü gör",
+      latestTransmission: "Son Yayın",
+      viewFullJournal: "Tüm Günlüğü Gör",
       recentFragments: "yakın parçalar",
-      roomsInArchive: "arşivdeki odalar",
+      roomsInArchive: "Arşivdeki Odalar",
       portalPhotography: "gece sokakları, anıtlar, tanıklar",
       portalLinux: "kişiselleştirilmiş makineler",
-      portalMedia: "korku, harabeler, hafıza",
+      portalMedia: "Korku, harabeler, hafıza",
+      portalGames: "Bitirilen, yarım kalan, hatırlanan",
+      portalMovies: "Kaybolmayı reddeden kareler",
+      portalSeries: "Bölümler, sezonlar, animasyon dünyaları",
+      portalGroupWatched: "Oynadıklarım / İzlediklerim / Çektiklerim",
+      portalGroupMine: "Benim Odalarım",
       portalCharacters: "içimde tanıdığım insanlar",
       portalMusic: "günlük bir şarkı ve kalıntıları",
       portalLinks: "internetimin geri kalanı",
-      openEntry: "kaydı aç",
-      moodPrefix: "ruh hâli:",
-      searchArchive: "arşivde ara",
+      openEntry: "Kaydı Aç",
+      moodPrefix: "Ruh Hâli:",
+      searchArchive: "Arşivde Ara",
       searchPlaceholder: "başlık, ruh hâli veya kelime yaz...",
       allTag: "#tümü",
-      nothingFound: "hiçbir şey bulunamadı",
+      nothingFound: "Hiçbir Şey Bulunamadı",
       noMatchingFragment: "arşivde eşleşen bir parça yok.",
-      uploadNote: "yükleme notu:",
+      uploadNote: "Yükleme Notu:",
       uploadPhotoHelp: "fotoğraflarını assets/photos/ içine koy ve dosya yolunu content.js içine yaz.",
-      gameDiary: "oyun günlüğü",
-      filmDiary: "film günlüğü",
-      records: "kayıt",
-      openProject: "projeyi aç",
+      gameDiary: "Oynadığım Oyunlar",
+      filmDiary: "İzlediğim Filmler",
+      seriesDiary: "İzlediğim Diziler + Animeler",
+      emptyMediaRoom: "Bu oda, daha sonra content.js dosyasına ekleyeceğin yapımlar için hazır.",
+      records: "Kayıt",
+      openProject: "Projeyi Aç",
       privateNotLinked: "özel / bağlantı yok",
-      recentGithub: "son GitHub repoları",
-      githubProfile: "GitHub profili ↗",
-      contactingGithub: "GitHub API ile bağlantı kuruluyor...",
+      recentGithub: "Son GitHub Repoları",
+      githubProfile: "GitHub Profili ↗",
+      contactingGithub: "GitHub API ile Bağlantı Kuruluyor...",
       githubUnavailable: "Şu anda GitHub'a ulaşılamadı. Yukarıdaki elle yazılmış proje kartları hâlâ çalışıyor.",
-      noDescription: "henüz açıklama yazılmadı.",
-      dailyTransmission: "günün yayını",
+      noDescription: "Henüz açıklama yazılmadı.",
+      dailyTransmission: "Günün Yayını",
       playerSpotifyHelp: "Spotify modu aktif. Günlük şarkıyı değiştirmek için content.js içindeki spotifyEmbedUrl değerini değiştir.",
       playerMp3Help: "MP3 modu aktif. Dosyayı assets/music/ içine koy ve content.js içindeki mp3Src değerini ayarla.",
-      musicHistory: "şarkı arşivi",
-      noLink: "bağlantı henüz eklenmedi",
-      visit: "ziyaret et",
-      linkInstructionsTitle: "bağlantıları düzenlemek",
+      musicHistory: "Şarkı Arşivi",
+      noLink: "Bağlantı Henüz Eklenmedi",
+      visit: "Ziyaret Et",
+      linkInstructionsTitle: "Bağlantıları Düzenlemek",
       linkInstructions: "content.js dosyasını açıp linkCategories alanını düzenle. URL alanı boş olanlar gerçek bağlantını ekleyene kadar devre dışı görünür.",
       currentSnapshot: "mevcut_durum.txt",
-      watchingLabel: "izliyorum",
-      readingLabel: "okuyorum",
-      workingOnLabel: "üzerinde çalışıyorum",
-      lastUpdatedLabel: "son güncelleme",
-      siteChangelog: "site değişiklik günlüğü",
-      aboutExisting: "yaşamak değil, var olmak",
-      aboutParagraph1: "Ben Derin; internette AbsoluteDerry olarak da biliniyorum. Oyun Tasarımı ve Geliştirme okuyorum, geceleri şehirlerin fotoğrafını çekiyorum, bilgisayarları bana ait hissedene kadar yeniden kuruyorum ve yalnızlığı mimariye dönüştüren hikâyeleri topluyorum.",
-      aboutWhy: "burası neden var",
+      watchingLabel: "İzliyorum",
+      readingLabel: "Okuyorum",
+      workingOnLabel: "Üzerinde Çalışıyorum",
+      lastUpdatedLabel: "Son Güncelleme",
+      siteChangelog: "Site Değişiklik Günlüğü",
+      aboutExisting: "Yaşamak Değil, Var Olmak",
+      aboutParagraph1: "Ben Derry; internette AbsoluteDerry olarak da biliniyorum. Oyun Tasarımı ve Geliştirme okuyorum, geceleri şehirlerin fotoğrafını çekiyorum, bilgisayarları bana ait hissedene kadar yeniden kuruyorum ve yalnızlığı mimariye dönüştüren hikâyeleri topluyorum.",
+      aboutWhy: "Burası Neden Var",
       aboutParagraph2: "Platformlar insanları profillere, gönderileri dikkat birimlerine dönüştürüyor. Kişisel bir web sitesinin hâlâ odaları, çıkmazları, tamamlanmamış duvarları ve öne çıkarılmayı istemeden var olan nesneleri olabilir.",
-      aboutWhat: "buraya ait olanlar",
+      aboutWhat: "Buraya Ait Olanlar",
       aboutParagraph3: "Linux notları. İşletim sistemleri. Fotoğraflar. Oyunlar ve filmler. Müzik. Bağlantılar. Kendimi gördüğüm kurgusal karakterler. Geliştirme projeleri. Daha sonra anlam ifade etmeyebilecek günlük kayıtları.",
       aboutQuote: "bu site bir arşiv olarak var. gösteri değil. marka değil.",
       colophon: "Düz HTML, CSS ve JavaScript ile yapıldı. GitHub Pages üzerinde barındırılıyor. Framework, analiz, reklam veya takip kodu yok.",
-      journalEntry: "günlük kaydı",
+      journalEntry: "Günlük Kaydı",
       closePost: "Kaydı kapat",
-      unknownSong: "isimsiz şarkı",
-      listen: "dinle ↗"
+      unknownSong: "İsimsiz Şarkı",
+      listen: "Dinle ↗"
     },
     pl: {
-      skipToContent: "przejdź do treści",
-      systemMessage: "osobiste archiwum zamontowane tylko do odczytu",
+      skipToContent: "Przejdź do Treści",
+      systemMessage: "Osobiste Archiwum Zamontowane Tylko do Odczytu",
       heroEyebrow: "WITAJ W MOIM ZAKĄTKU STAREGO INTERNETU",
       heroTaglineA: "istnieć, nie żyć",
       heroTaglineB: "obserwować, nie uczestniczyć",
       archive: "ARCHIWUM",
       online: "ONLINE",
-      navHome: "strona główna",
-      navJournal: "dziennik",
-      navPhotos: "zdjęcia",
-      navPhotography: "fotografia",
-      navLinux: "linux",
-      navLinuxSystems: "linux / systemy",
-      navMedia: "media",
-      navGamesFilms: "gry + filmy",
-      navCharacters: "postacie",
-      navFictionalSelves: "fikcyjne jaźnie",
-      navMusic: "muzyka",
-      navLinks: "linki",
-      navProjects: "projekty",
-      navNow: "teraz",
-      navAbout: "o mnie",
-      profileName: "imię",
-      profileLanguages: "języki",
-      profileLocation: "lokalizacja",
-      profileOccupation: "zajęcie",
-      profileOccupationValue: "studentka projektowania gier",
-      statusLabel: "status:",
+      navHome: "Strona Główna",
+      navJournal: "Dziennik",
+      navPhotos: "Zdjęcia",
+      navPhotography: "Fotografia",
+      navLinux: "Linux",
+      navLinuxSystems: "Moje Systemy",
+      navMedia: "Media",
+      navGames: "Gry, w Które Grałam",
+      navMovies: "Filmy, Które Obejrzałam",
+      navSeries: "Seriale + Anime, Które Obejrzałam",
+      navSystems: "Moje Systemy",
+      navMusicRoom: "Pokój Muzyczny",
+      navMyLinks: "Moje Linki",
+      navGamesFilms: "Gry + Filmy",
+      navCharacters: "Postacie",
+      navFictionalSelves: "Moje Fikcyjne Jaźnie",
+      navMusic: "Muzyka",
+      navLinks: "Linki",
+      navProjects: "Projekty",
+      navNow: "Teraz",
+      navAbout: "O Mnie",
+      profileName: "Imię",
+      profileLanguages: "Języki",
+      profileLocation: "Lokalizacja",
+      profileOccupation: "Zajęcie",
+      profileOccupationValue: "Studentka Projektowania Gier",
+      statusLabel: "Status:",
       allLinks: "wszystkie linki →",
       moodLabel: "nastrój",
       playingLabel: "gram",
@@ -298,22 +339,28 @@
       randomPost: "losowy wpis ↝",
       footerMain: "Kodowane ręcznie. Bez feedu. Bez algorytmu. Bez daty ważności.",
       footerNote: "najlepiej doświadczać samotnie, po północy, w słuchawkach.",
-      routeHome: "strona główna",
-      routeJournal: "dziennik",
-      routePhotos: "fotografia",
-      routeLinux: "linux / systemy",
-      routeMedia: "gry + filmy",
-      routeCharacters: "fikcyjne jaźnie",
-      routeMusic: "pokój muzyczny",
-      routeLinks: "linki",
-      routeProjects: "projekty",
-      routeNow: "teraz",
-      routeAbout: "o mnie",
+      routeHome: "Strona Główna",
+      routeJournal: "Dziennik",
+      routePhotos: "Fotografia",
+      routeLinux: "Moje Systemy",
+      routeMedia: "Gry, w Które Grałam",
+      routeGames: "Gry, w Które Grałam",
+      routeMovies: "Filmy, Które Obejrzałam",
+      routeSeries: "Seriale + Anime, Które Obejrzałam",
+      routeCharacters: "Moje Fikcyjne Jaźnie",
+      routeMusic: "Pokój Muzyczny",
+      routeLinks: "Moje Linki",
+      routeProjects: "Projekty",
+      routeNow: "Teraz",
+      routeAbout: "O Mnie",
       subtitleHome: "osobiste archiwum dla rzeczy, które nie należą do feedu.",
       subtitleJournal: "datowane fragmenty, niedokończone myśli i zapisy obecności.",
       subtitlePhotos: "miasto po tym, jak ludzie przestają na nie patrzeć.",
       subtitleLinux: "maszyny, których używam, przebudowuję i czasami psuję.",
-      subtitleMedia: "historie, pokoje i obrazy pozostałe po zgaśnięciu ekranu.",
+      subtitleMedia: "Historie, pokoje i obrazy pozostałe po zgaśnięciu ekranu.",
+      subtitleGames: "Gry ukończone, porzucone, odwiedzone ponownie lub zachowane w pamięci.",
+      subtitleMovies: "Filmy, które pozostały widoczne po zgaśnięciu ekranu.",
+      subtitleSeries: "Dłuższe historie i animowane światy zachowane w archiwum.",
       subtitleCharacters: "postacie są czasem lustrami z lepszym światłem.",
       subtitleMusic: "jedna piosenka na dziś, starsze zachowane jak datowane wspomnienia.",
       subtitleLinks: "drzwi do innych miejsc, w których istnieję w internecie.",
@@ -326,10 +373,15 @@
       latestTransmission: "najnowsza transmisja",
       viewFullJournal: "zobacz cały dziennik",
       recentFragments: "ostatnie fragmenty",
-      roomsInArchive: "pokoje w archiwum",
+      roomsInArchive: "Pokoje w Archiwum",
       portalPhotography: "nocne ulice, pomniki, świadkowie",
       portalLinux: "maszyny uczynione osobistymi",
-      portalMedia: "horror, ruiny, pamięć",
+      portalMedia: "Horror, ruiny, pamięć",
+      portalGames: "Ukończone, niedokończone, zapamiętane",
+      portalMovies: "Kadry, które nie chciały zniknąć",
+      portalSeries: "Odcinki, sezony, animowane światy",
+      portalGroupWatched: "Grane / Oglądane / Fotografowane",
+      portalGroupMine: "Moje Pokoje",
       portalCharacters: "ludzie rozpoznani od środka",
       portalMusic: "codzienny utwór i jego pozostałości",
       portalLinks: "reszta mojego internetu",
@@ -343,7 +395,9 @@
       uploadNote: "informacja o przesyłaniu:",
       uploadPhotoHelp: "umieść zdjęcia w assets/photos/, a następnie wpisz ścieżkę pliku w content.js.",
       gameDiary: "dziennik gier",
-      filmDiary: "dziennik filmów",
+      filmDiary: "Filmy, Które Obejrzałam",
+      seriesDiary: "Seriale + Anime, Które Obejrzałam",
+      emptyMediaRoom: "Ten pokój czeka na tytuły, które później dodasz w pliku content.js.",
       records: "wpisów",
       openProject: "otwórz projekt",
       privateNotLinked: "prywatne / bez linku",
@@ -367,7 +421,7 @@
       lastUpdatedLabel: "ostatnia aktualizacja",
       siteChangelog: "dziennik zmian strony",
       aboutExisting: "istnieć, nie żyć",
-      aboutParagraph1: "Jestem Derin, w internecie znana również jako AbsoluteDerry. Studiuję projektowanie i tworzenie gier, fotografuję miasta nocą, przebudowuję komputery, aż zaczną być moje, i zbieram historie zamieniające samotność w architekturę.",
+      aboutParagraph1: "Jestem Derry, w internecie znana również jako AbsoluteDerry. Studiuję projektowanie i tworzenie gier, fotografuję miasta nocą, przebudowuję komputery, aż zaczną być moje, i zbieram historie zamieniające samotność w architekturę.",
       aboutWhy: "dlaczego to miejsce istnieje",
       aboutParagraph2: "Platformy spłaszczają ludzi do profili, a wpisy do jednostek uwagi. Osobista strona nadal może mieć pokoje, ślepe zaułki, niedokończone ściany i przedmioty istniejące bez potrzeby promocji.",
       aboutWhat: "co tu należy",
@@ -384,9 +438,12 @@
   const routeConfig = {
     home: ["routeHome", "subtitleHome"],
     journal: ["routeJournal", "subtitleJournal"],
+    games: ["routeGames", "subtitleGames"],
+    movies: ["routeMovies", "subtitleMovies"],
+    series: ["routeSeries", "subtitleSeries"],
     photos: ["routePhotos", "subtitlePhotos"],
     linux: ["routeLinux", "subtitleLinux"],
-    media: ["routeMedia", "subtitleMedia"],
+    media: ["routeGames", "subtitleGames"],
     characters: ["routeCharacters", "subtitleCharacters"],
     music: ["routeMusic", "subtitleMusic"],
     links: ["routeLinks", "subtitleLinks"],
@@ -395,19 +452,28 @@
     about: ["routeAbout", "subtitleAbout"]
   };
 
+  function sentenceCase(value) {
+    const text = String(value ?? "");
+    return text.replace(/^(\s*[\[({"'“‘#]*)([a-ząćęłńóśźżçğıöşü])/iu, (match, prefix, letter) => {
+      if (currentLanguage === "tr" && letter === "i") return `${prefix}İ`;
+      if (currentLanguage === "tr" && letter === "ı") return `${prefix}I`;
+      return `${prefix}${letter.toLocaleUpperCase(localeMap[currentLanguage])}`;
+    });
+  }
+
   function t(key, replacements = {}) {
     let value = translations[currentLanguage]?.[key] ?? translations.en[key] ?? key;
     Object.entries(replacements).forEach(([name, replacement]) => {
       value = value.replaceAll(`{${name}}`, String(replacement));
     });
-    return value;
+    return sentenceCase(value);
   }
 
   function localize(value) {
     if (value && typeof value === "object" && !Array.isArray(value)) {
-      return value[currentLanguage] ?? value.en ?? Object.values(value)[0] ?? "";
+      return sentenceCase(value[currentLanguage] ?? value.en ?? Object.values(value)[0] ?? "");
     }
-    return value ?? "";
+    return sentenceCase(value ?? "");
   }
 
   function escapeHtml(value) {
@@ -525,13 +591,25 @@
       </section>
       <section class="section-block">
         <div class="section-heading"><h2>${escapeHtml(t("roomsInArchive"))}</h2></div>
-        <div class="portal-grid">
-          <button class="portal panel" type="button" data-view="photos"><span>01</span><strong>${escapeHtml(t("routePhotos"))}</strong><small>${escapeHtml(t("portalPhotography"))}</small></button>
-          <button class="portal panel" type="button" data-view="linux"><span>02</span><strong>${escapeHtml(t("routeLinux"))}</strong><small>${escapeHtml(t("portalLinux"))}</small></button>
-          <button class="portal panel" type="button" data-view="media"><span>03</span><strong>${escapeHtml(t("routeMedia"))}</strong><small>${escapeHtml(t("portalMedia"))}</small></button>
-          <button class="portal panel" type="button" data-view="characters"><span>04</span><strong>${escapeHtml(t("routeCharacters"))}</strong><small>${escapeHtml(t("portalCharacters"))}</small></button>
-          <button class="portal panel" type="button" data-view="music"><span>05</span><strong>${escapeHtml(t("routeMusic"))}</strong><small>${escapeHtml(t("portalMusic"))}</small></button>
-          <button class="portal panel" type="button" data-view="links"><span>06</span><strong>${escapeHtml(t("routeLinks"))}</strong><small>${escapeHtml(t("portalLinks"))}</small></button>
+        <div class="portal-groups">
+          <section class="portal-group" aria-labelledby="portal-played-title">
+            <h3 id="portal-played-title" class="portal-group__title">${escapeHtml(t("portalGroupWatched"))}</h3>
+            <div class="portal-stack">
+              <button class="portal panel" type="button" data-view="games"><span>01</span><strong>${escapeHtml(t("routeGames"))}</strong><small>${escapeHtml(t("portalGames"))}</small></button>
+              <button class="portal panel" type="button" data-view="movies"><span>02</span><strong>${escapeHtml(t("routeMovies"))}</strong><small>${escapeHtml(t("portalMovies"))}</small></button>
+              <button class="portal panel" type="button" data-view="series"><span>03</span><strong>${escapeHtml(t("routeSeries"))}</strong><small>${escapeHtml(t("portalSeries"))}</small></button>
+              <button class="portal panel" type="button" data-view="photos"><span>04</span><strong>${escapeHtml(t("routePhotos"))}</strong><small>${escapeHtml(t("portalPhotography"))}</small></button>
+            </div>
+          </section>
+          <section class="portal-group" aria-labelledby="portal-mine-title">
+            <h3 id="portal-mine-title" class="portal-group__title">${escapeHtml(t("portalGroupMine"))}</h3>
+            <div class="portal-stack">
+              <button class="portal panel" type="button" data-view="linux"><span>05</span><strong>${escapeHtml(t("routeLinux"))}</strong><small>${escapeHtml(t("portalLinux"))}</small></button>
+              <button class="portal panel" type="button" data-view="characters"><span>06</span><strong>${escapeHtml(t("routeCharacters"))}</strong><small>${escapeHtml(t("portalCharacters"))}</small></button>
+              <button class="portal panel" type="button" data-view="links"><span>07</span><strong>${escapeHtml(t("routeLinks"))}</strong><small>${escapeHtml(t("portalLinks"))}</small></button>
+              <button class="portal panel" type="button" data-view="music"><span>08</span><strong>${escapeHtml(t("routeMusic"))}</strong><small>${escapeHtml(t("portalMusic"))}</small></button>
+            </div>
+          </section>
         </div>
       </section>
     `;
@@ -645,18 +723,32 @@ $ _</code></pre>
     `;
   }
 
-  function renderMedia() {
+  function renderMediaCollection(route, items, headingKey) {
     view.innerHTML = `
-      ${pageHeader("media")}
+      ${pageHeader(route)}
       <section class="section-block">
-        <div class="section-heading"><h2>${escapeHtml(t("gameDiary"))}</h2><span>${content.media.games.length} ${escapeHtml(t("records"))}</span></div>
-        <div class="media-list">${content.media.games.map(mediaItem).join("")}</div>
-      </section>
-      <section class="section-block">
-        <div class="section-heading"><h2>${escapeHtml(t("filmDiary"))}</h2><span>${content.media.films.length} ${escapeHtml(t("records"))}</span></div>
-        <div class="media-list">${content.media.films.map(mediaItem).join("")}</div>
+        <div class="section-heading"><h2>${escapeHtml(t(headingKey))}</h2><span>${items.length} ${escapeHtml(t("records"))}</span></div>
+        ${items.length
+          ? `<div class="media-list">${items.map(mediaItem).join("")}</div>`
+          : `<div class="panel empty-state"><h3>${escapeHtml(t(headingKey))}</h3><p>${escapeHtml(t("emptyMediaRoom"))}</p></div>`}
       </section>
     `;
+  }
+
+  function renderGames() {
+    renderMediaCollection("games", content.media.games, "gameDiary");
+  }
+
+  function renderMovies() {
+    renderMediaCollection("movies", content.media.films, "filmDiary");
+  }
+
+  function renderSeries() {
+    renderMediaCollection("series", content.media.series || [], "seriesDiary");
+  }
+
+  function renderMedia() {
+    renderGames();
   }
 
   function renderCharacters() {
@@ -895,11 +987,14 @@ $ _</code></pre>
   function renderRoute(route, options = {}) {
     const safeRoute = routeConfig[route] ? route : "home";
     routeButtonState(safeRoute);
-    document.title = `${t(routeConfig[safeRoute][0])} // absolute derry`;
+    document.title = `${t(routeConfig[safeRoute][0])} // Absolute Derry`;
 
     const renderers = {
       home: renderHome,
       journal: () => renderJournal(options.tag || ""),
+      games: renderGames,
+      movies: renderMovies,
+      series: renderSeries,
       photos: renderPhotos,
       linux: renderLinux,
       media: renderMedia,
@@ -1014,16 +1109,18 @@ $ _</code></pre>
     window.setInterval(updateClock, 1000);
 
     const toggle = document.getElementById("crt-toggle");
-    const storedCrt = localStorage.getItem("absolute-derry-crt");
-    const enabled = storedCrt !== "off";
+    const storedCrt = localStorage.getItem("absolute-derry-crt-v2");
+    const enabled = storedCrt === "on";
     document.body.classList.toggle("crt-disabled", !enabled);
+    document.body.classList.toggle("crt-enabled", enabled);
     toggle.textContent = `CRT: ${enabled ? "ON" : "OFF"}`;
     toggle.setAttribute("aria-pressed", String(enabled));
 
     toggle.addEventListener("click", () => {
       const currentlyDisabled = document.body.classList.toggle("crt-disabled");
       const isEnabled = !currentlyDisabled;
-      localStorage.setItem("absolute-derry-crt", isEnabled ? "on" : "off");
+      document.body.classList.toggle("crt-enabled", isEnabled);
+      localStorage.setItem("absolute-derry-crt-v2", isEnabled ? "on" : "off");
       toggle.textContent = `CRT: ${isEnabled ? "ON" : "OFF"}`;
       toggle.setAttribute("aria-pressed", String(isEnabled));
     });

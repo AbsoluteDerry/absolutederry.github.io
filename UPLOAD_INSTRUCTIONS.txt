@@ -1,4 +1,4 @@
-ABSOLUTEDERRY BLOG — GITHUB UPLOAD
+ABSOLUTEDERRY BLOG v1.2 — GITHUB UPLOAD
 
 1. Open the AbsoluteDerry/absolutederry.github.io repository on GitHub.
 2. Click Add file > Upload files.
@@ -9,3 +9,5 @@ ABSOLUTEDERRY BLOG — GITHUB UPLOAD
 7. Open absolutederry.github.io after GitHub finishes deployment.
 
 Important: Upload the CONTENTS of this folder, not the folder itself.
+
+Suggested commit message: Revise personal archive v1.2

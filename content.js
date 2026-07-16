@@ -2,29 +2,29 @@
   ABSOLUTEDERRY CONTENT FILE
   -------------------------
   Add posts, photographs, links, daily music, operating systems, games,
-  films, characters and projects here. Text can be a normal string or a
+  films, series, anime, characters and projects here. Text can be a normal string or a
   multilingual object: { en: "...", tr: "...", pl: "..." }.
 */
 window.DERRY_CONTENT = {
   profile: {
     status: {
-      en: "rebuilding my digital bedroom",
-      tr: "dijital yatak odamı yeniden kuruyorum",
-      pl: "odbudowuję swój cyfrowy pokój"
+      en: "Rebuilding my digital bedroom",
+      tr: "Dijital yatak odamı yeniden kuruyorum",
+      pl: "Odbudowuję swój cyfrowy pokój"
     }
   },
 
   now: {
     lastUpdated: "2026-07-16",
     mood: {
-      en: "restless / rebuilding",
-      tr: "huzursuz / yeniden kuruyorum",
-      pl: "niespokojna / odbudowuję"
+      en: "Restless / Rebuilding",
+      tr: "Huzursuz / Yeniden Kuruyorum",
+      pl: "Niespokojna / Odbudowuję"
     },
     playing: "Resident Evil Village",
     watching: "—",
     reading: "—",
-    workingOn: "absolutederry.github.io v1.1",
+    workingOn: "absolutederry.github.io v1.2",
     obsessions: [
       { en: "old web personal sites", tr: "eski internet kişisel siteleri", pl: "osobiste strony starego internetu" },
       { en: "linux desktops", tr: "linux masaüstleri", pl: "pulpity Linuksa" },
@@ -310,7 +310,8 @@ window.DERRY_CONTENT = {
       { title: "Silent Hill", year: "2006", status: { en: "favourite", tr: "favori", pl: "ulubiony" }, note: { en: "Ash, rust, maternal horror and a town that behaves like an emotion.", tr: "Kül, pas, annelik korkusu ve bir duygu gibi davranan kasaba.", pl: "Popiół, rdza, macierzyński horror i miasto zachowujące się jak emocja." } },
       { title: "Perfect Blue", year: "1997", status: { en: "favourite", tr: "favori", pl: "ulubiony" }, note: { en: "Identity watched until it breaks.", tr: "Kırılana kadar izlenen kimlik.", pl: "Tożsamość obserwowana aż do pęknięcia." } },
       { title: "The Blair Witch Project", year: "1999", status: { en: "archive", tr: "arşiv", pl: "archiwum" }, note: { en: "The forest as a system with rules nobody understands.", tr: "Kimsenin anlamadığı kuralları olan bir sistem olarak orman.", pl: "Las jako system z zasadami, których nikt nie rozumie." } }
-    ]
+    ],
+    series: []
   },
 
   characters: [
@@ -366,6 +367,15 @@ window.DERRY_CONTENT = {
   ],
 
   updates: [
+    {
+      date: "2026-07-16",
+      version: "v1.2.0",
+      text: {
+        en: "Locked the original colour palette, set CRT to OFF by default with a much stronger ON mode, added the Milk-chan profile image, corrected the name to Derry, improved capitalization, and reorganised the archive into eight grouped rooms.",
+        tr: "Orijinal renk paleti kilitlendi; CRT varsayılan olarak KAPALI yapıldı ve AÇIK modu belirginleştirildi; Milk-chan profil görseli eklendi; isim Derry olarak düzeltildi; büyük-küçük harfler düzenlendi ve arşiv sekiz gruplandırılmış odaya ayrıldı.",
+        pl: "Zablokowano oryginalną paletę kolorów, ustawiono domyślnie wyłączony CRT z wyraźniejszym trybem włączonym, dodano obraz profilowy Milk-chan, poprawiono imię na Derry, uporządkowano wielkie litery i podzielono archiwum na osiem pogrupowanych pokoi."
+      }
+    },
     {
       date: "2026-07-16",
       version: "v1.1.0",
