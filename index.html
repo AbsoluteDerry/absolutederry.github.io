@@ -1,188 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-  <!-- ========================= -->
-  <!-- BASIC META -->
-  <!-- ========================= -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ========================= -->
-  <!-- SITE TITLE -->
-  <!-- ========================= -->
-  <title>absolute derry — personal archive</title>
-
-  <!-- ========================= -->
-  <!-- FAVICON -->
-  <!-- ========================= -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-  <!-- ========================= -->
-  <!-- STYLES -->
-  <!-- ========================= -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09050c">
+  <meta name="description" content="AbsoluteDerry's personal archive: journal, photography, Linux, games, films, music, links and projects.">
+  <title>absolute derry // personal archive</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-
-  <!-- ========================= -->
-  <!-- NOSTALGIC INLINE TOUCHES -->
-  <!-- ========================= -->
-  <style>
-    body {
-      cursor: url("cursor.cur"), auto;
-    }
-  </style>
-
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
 </head>
+<body>
+  <a class="skip-link" href="#view" data-i18n="skipToContent">skip to content</a>
 
-<body class="fade-in mood-default">
+  <div class="screen-noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
 
-<!-- ========================= -->
-<!-- LANGUAGE SELECT OVERLAY -->
-<!-- ========================= -->
-<div id="language-overlay">
-  <div class="lang-box">
-    <h2>choose your language</h2>
-    <p>
-      this site adapts its voice.<br>
-      meaning stays the same.
-    </p>
-    <button onclick="setLang('en')">english</button>
-    <button onclick="setLang('tr')">türkçe</button>
-    <button onclick="setLang('pl')">polski</button>
+  <div id="language-gate" class="language-gate" hidden>
+    <div class="language-gate__window panel" role="dialog" aria-modal="true" aria-labelledby="language-gate-title">
+      <div class="panel-title">language_selector.exe</div>
+      <p class="eyebrow">ABSOLUTE_DERRY.SYS</p>
+      <h1 id="language-gate-title">choose a language / bir dil seç / wybierz język</h1>
+      <p>the archive will remember your choice on this device.</p>
+      <div class="language-gate__choices">
+        <button type="button" data-language-choice="en"><strong>EN</strong><span>English</span></button>
+        <button type="button" data-language-choice="tr"><strong>TR</strong><span>Türkçe</span></button>
+        <button type="button" data-language-choice="pl"><strong>PL</strong><span>Polski</span></button>
+      </div>
+      <small>you can change this later from the top bar.</small>
+    </div>
   </div>
-</div>
 
-<!-- ========================= -->
-<!-- MAIN CONTAINER -->
-<!-- ========================= -->
-<div class="container">
-
-  <!-- ========================= -->
-  <!-- HEADER -->
-  <!-- ========================= -->
-  <header class="site-header">
-    <h1>absolute derry</h1>
-
-    <p class="subtitle">
-      existing, not living<br>
-      observing, not participating
-    </p>
-
-    <p class="updated">
-      last updated:
-      <span id="lastUpdated">calculating…</span>
-    </p>
+  <header class="system-bar">
+    <div class="system-bar__brand">
+      <span class="status-led" aria-hidden="true"></span>
+      ABSOLUTE_DERRY.SYS
+    </div>
+    <div class="system-bar__message" id="system-message" data-i18n="systemMessage">personal archive mounted read-only</div>
+    <div class="system-controls">
+      <div class="language-switcher" role="group" aria-label="Language">
+        <button class="tiny-button" type="button" data-language="en" aria-pressed="true">EN</button>
+        <button class="tiny-button" type="button" data-language="tr" aria-pressed="false">TR</button>
+        <button class="tiny-button" type="button" data-language="pl" aria-pressed="false">PL</button>
+      </div>
+      <button class="tiny-button" id="crt-toggle" type="button" aria-pressed="true">CRT: ON</button>
+    </div>
   </header>
 
-  <!-- ========================= -->
-  <!-- MAIN LAYOUT -->
-  <!-- ========================= -->
-  <div class="layout">
-
-    <!-- ========================= -->
-    <!-- CONTENT AREA -->
-    <!-- ========================= -->
-    <main id="posts-area">
-
-      <!-- intro text -->
-      <section class="intro">
-        <p>
-          this is not a feed.<br>
-          this is a record.
-        </p>
-        <hr>
-      </section>
-
-      <!-- posts injected by JS -->
-      <section id="posts">
-        <!-- posts.js will populate this -->
-      </section>
-
-    </main>
-
-    <!-- ========================= -->
-    <!-- SIDEBAR -->
-    <!-- ========================= -->
-    <aside class="sidebar">
-
-      <!-- ========================= -->
-      <!-- RECENT ENTRIES -->
-      <!-- ========================= -->
-      <div class="sidebar-box blue">
-        <h3>recent entries</h3>
-        <ul id="recent">
-          <!-- filled by JS -->
-        </ul>
+  <div class="page-shell">
+    <header class="hero panel">
+      <div>
+        <p class="eyebrow" data-i18n="heroEyebrow">WELCOME TO MY CORNER OF THE OLD WEB</p>
+        <h1 class="glitch" data-text="absolute derry">absolute derry</h1>
+        <p class="hero__tagline"><span data-i18n="heroTaglineA">existing, not living</span> <span>//</span> <span data-i18n="heroTaglineB">observing, not participating</span></p>
       </div>
-
-      <!-- ========================= -->
-      <!-- TAG FILTER -->
-      <!-- ========================= -->
-      <div class="sidebar-box blue">
-        <h3>filter by tag</h3>
-        <div id="tagFilter">
-          <!-- tags injected by JS -->
-        </div>
+      <div class="hero__stamp" aria-label="site status">
+        <span data-i18n="archive">ARCHIVE</span>
+        <strong data-i18n="online">ONLINE</strong>
+        <small>v1.1.0</small>
       </div>
+    </header>
 
-      <!-- ========================= -->
-      <!-- NAVIGATION -->
-      <!-- ========================= -->
-      <div class="sidebar-box blue">
-        <h3>navigation</h3>
-        <ul>
-          <li><a href="about.html">about</a></li>
-          <li><a href="archive.html">archive</a></li>
-          <li><a href="index.html">home</a></li>
-        </ul>
-      </div>
+    <nav class="mobile-nav panel" aria-label="Mobile navigation">
+      <button type="button" data-view="home" data-i18n="navHome">home</button>
+      <button type="button" data-view="journal" data-i18n="navJournal">journal</button>
+      <button type="button" data-view="photos" data-i18n="navPhotos">photos</button>
+      <button type="button" data-view="linux" data-i18n="navLinux">linux</button>
+      <button type="button" data-view="media" data-i18n="navMedia">media</button>
+      <button type="button" data-view="characters" data-i18n="navCharacters">characters</button>
+      <button type="button" data-view="music" data-i18n="navMusic">music</button>
+      <button type="button" data-view="links" data-i18n="navLinks">links</button>
+      <button type="button" data-view="projects" data-i18n="navProjects">projects</button>
+      <button type="button" data-view="now" data-i18n="navNow">now</button>
+      <button type="button" data-view="about" data-i18n="navAbout">about</button>
+    </nav>
 
-      <!-- ========================= -->
-      <!-- NOW PLAYING -->
-      <!-- ========================= -->
-      <div class="sidebar-box blue">
-        <h3>now playing</h3>
-        <iframe
-          src="https://open.spotify.com/embed/track/5VPaXkoOt3rJbVNa1j5wmy"
-          width="100%"
-          height="80"
-          frameborder="0"
-          allow="encrypted-media">
-        </iframe>
-      </div>
+    <div class="three-column-layout">
+      <aside class="left-column" aria-label="Profile and navigation">
+        <section class="panel profile-card">
+          <div class="panel-title">user_profile.exe</div>
+          <div class="avatar" role="img" aria-label="Abstract placeholder avatar. Replace it with your own photograph later.">
+            <span>AD</span>
+          </div>
+          <h2 id="profile-name">AbsoluteDerry</h2>
+          <p class="handle">@AbsoluteDerry</p>
+          <dl class="profile-facts">
+            <div><dt data-i18n="profileName">name</dt><dd>Derin</dd></div>
+            <div><dt data-i18n="profileLanguages">languages</dt><dd>TR / EN / PL</dd></div>
+            <div><dt data-i18n="profileLocation">location</dt><dd>Subcarpathia, Poland</dd></div>
+            <div><dt data-i18n="profileOccupation">occupation</dt><dd data-i18n="profileOccupationValue">game design student</dd></div>
+          </dl>
+          <div class="status-box">
+            <span data-i18n="statusLabel">status:</span>
+            <span id="profile-status">rebuilding my digital bedroom</span>
+          </div>
+        </section>
 
-      <!-- ========================= -->
-      <!-- FOOTNOTE -->
-      <!-- ========================= -->
-      <div class="sidebar-box subtle">
-        <small>
-          archived thoughts.<br>
-          nothing expires.
-        </small>
-      </div>
+        <nav class="panel desktop-nav" aria-label="Primary navigation">
+          <div class="panel-title">directory</div>
+          <button type="button" data-view="home"><span>01</span> <b data-i18n="navHome">home</b></button>
+          <button type="button" data-view="journal"><span>02</span> <b data-i18n="navJournal">journal</b></button>
+          <button type="button" data-view="photos"><span>03</span> <b data-i18n="navPhotography">photography</b></button>
+          <button type="button" data-view="linux"><span>04</span> <b data-i18n="navLinuxSystems">linux / systems</b></button>
+          <button type="button" data-view="media"><span>05</span> <b data-i18n="navGamesFilms">games + films</b></button>
+          <button type="button" data-view="characters"><span>06</span> <b data-i18n="navFictionalSelves">fictional selves</b></button>
+          <button type="button" data-view="music"><span>07</span> <b data-i18n="navMusic">music</b></button>
+          <button type="button" data-view="links"><span>08</span> <b data-i18n="navLinks">links</b></button>
+          <button type="button" data-view="projects"><span>09</span> <b data-i18n="navProjects">projects</b></button>
+          <button type="button" data-view="now"><span>10</span> <b data-i18n="navNow">now</b></button>
+          <button type="button" data-view="about"><span>11</span> <b data-i18n="navAbout">about</b></button>
+        </nav>
 
-    </aside>
+        <section class="panel mini-links">
+          <div class="panel-title">external_links.url</div>
+          <div id="mini-links-list"></div>
+          <button class="text-link-button" type="button" data-view="links" data-i18n="allLinks">all links →</button>
+        </section>
+      </aside>
 
+      <main id="view" class="main-column" tabindex="-1" aria-live="polite">
+        <noscript>
+          <section class="panel empty-state">
+            <h2>javascript is disabled</h2>
+            <p>This archive uses a small amount of JavaScript to render its pages. Nothing is tracked.</p>
+          </section>
+        </noscript>
+      </main>
+
+      <aside class="right-column" aria-label="Status widgets">
+        <section class="panel widget">
+          <div class="panel-title">now.exe</div>
+          <p><span class="widget-label" data-i18n="moodLabel">mood</span> <span id="now-mood">restless / rebuilding</span></p>
+          <p><span class="widget-label" data-i18n="playingLabel">playing</span> <span id="now-playing">—</span></p>
+          <p><span class="widget-label" data-i18n="localTimeLabel">local time</span> <span id="local-time">--:--:--</span></p>
+          <p><span class="widget-label" data-i18n="visitsLabel">visits here</span> <span id="visit-count">1</span> <span data-i18n="onThisDevice">on this device</span></p>
+          <button class="text-link-button" type="button" data-view="now" data-i18n="openNowPage">open now page →</button>
+        </section>
+
+        <section class="panel widget">
+          <div class="panel-title">currently_obsessed_with.txt</div>
+          <ul class="compact-list" id="obsessions-list"></ul>
+        </section>
+
+        <section class="panel widget music-widget">
+          <div class="panel-title">now_playing.mp3</div>
+          <div id="sidebar-music"></div>
+          <button class="text-link-button" type="button" data-view="music" data-i18n="musicArchive">music archive →</button>
+        </section>
+
+        <section class="panel widget terminal-widget" aria-label="Decorative terminal output">
+          <div class="panel-title">boot.log</div>
+          <pre><code>&gt; mounting /memories
+&gt; loading /photos
+&gt; linking /dreams
+&gt; warning: user awake
+<span class="terminal-cursor">_</span></code></pre>
+        </section>
+
+        <section class="panel widget random-widget">
+          <div class="panel-title">randomizer.exe</div>
+          <p data-i18n="randomDescription">open a random fragment from the journal.</p>
+          <button class="read-more" type="button" data-action="random-post" data-i18n="randomPost">random entry ↝</button>
+        </section>
+
+        <section class="panel widget button-wall">
+          <div class="panel-title">88x31 collection</div>
+          <div class="web-buttons" aria-label="Decorative old web buttons">
+            <span>LINUX USER</span>
+            <span>MADE WITH HTML</span>
+            <span>NO ALGORITHM</span>
+            <span>PERSONAL WEB</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer panel">
+      <p>© <span id="current-year"></span> AbsoluteDerry. <span data-i18n="footerMain">Hand-coded. No feed. No algorithm. No expiration date.</span></p>
+      <p class="footer-note" data-i18n="footerNote">best experienced alone, after midnight, with headphones.</p>
+    </footer>
   </div>
 
-  <!-- ========================= -->
-  <!-- FOOTER -->
-  <!-- ========================= -->
-  <footer class="site-footer">
-    <p>
-      © absolute derry<br>
-      some things stay even when people leave.
-    </p>
-  </footer>
-
-</div>
-
-<!-- ========================= -->
-<!-- SCRIPTS -->
-<!-- ========================= -->
-<script src="posts.js"></script>
-
+  <dialog id="post-dialog" class="post-dialog">
+    <button class="dialog-close" type="button" aria-label="Close post">×</button>
+    <article id="dialog-content"></article>
+  </dialog>
 </body>
 </html>
