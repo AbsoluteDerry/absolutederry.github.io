@@ -1,4 +1,4 @@
-# Absolute Derry — Personal Archive v1.2
+# Absolute Derry — Personal Archive v1.3
 
 A static multilingual personal blog for GitHub Pages. It uses plain HTML, CSS and JavaScript, so there is no build step.
 
@@ -31,7 +31,7 @@ cd absolutederry.github.io
 
 # Copy the new files into this folder, then:
 git add .
-git commit -m "Revise personal archive v1.2"
+git commit -m "Revise personal archive v1.3"
 git push origin main
 ```
 
@@ -141,7 +141,7 @@ The profile avatar is currently an original CSS placeholder. Replace the `.avata
 The sample posts, music, media entries, status and descriptions are starter content. Rewrite them directly in `content.js` as the archive grows.
 
 
-## v1.2 revision notes
+## v1.3 revision notes
 
 - The original colour palette is intentionally locked. Do not alter the variables under `:root` unless Derry explicitly asks for a palette change.
 - CRT begins **OFF** on first visit. `CRT: ON` now adds stronger scanlines, noise, vignette, flicker and chromatic text separation.
@@ -149,3 +149,8 @@ The sample posts, music, media entries, status and descriptions are starter cont
 - Public name: **Derry**; handle: **@AbsoluteDerry**.
 - The home archive contains eight grouped rooms: Games, Movies, Series + Anime, Photography, Systems, Fictional Selves, Links and Music.
 - English, Turkish and Polish remain supported.
+
+
+## v1.3 cache note
+
+`index.html` loads `style.css`, `content.js`, and `app.js` with a `?v=1.3.0` suffix. This prevents an old cached JavaScript file from being mixed with the new HTML. Upload and overwrite **all files** in the repository root.

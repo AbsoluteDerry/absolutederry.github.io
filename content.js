@@ -21,25 +21,62 @@ window.DERRY_CONTENT = {
       tr: "Huzursuz / Yeniden Kuruyorum",
       pl: "Niespokojna / Odbudowuję"
     },
-    playing: "Resident Evil Village",
-    watching: "—",
+    playing: "Metro 2033 Redux",
+    watching: "Perfect Blue",
     reading: "—",
-    workingOn: "absolutederry.github.io v1.2",
+    workingOn: "absolutederry.github.io v1.3",
     obsessions: [
-      { en: "old web personal sites", tr: "eski internet kişisel siteleri", pl: "osobiste strony starego internetu" },
-      { en: "linux desktops", tr: "linux masaüstleri", pl: "pulpity Linuksa" },
-      { en: "psychological horror", tr: "psikolojik korku", pl: "horror psychologiczny" },
-      { en: "night photography", tr: "gece fotoğrafçılığı", pl: "fotografia nocna" },
-      { en: "building DerryOS", tr: "DerryOS geliştirmek", pl: "budowanie DerryOS" }
+      { en: "Old web personal sites", tr: "Eski internet kişisel siteleri", pl: "Osobiste strony starego internetu" },
+      { en: "Linux desktops", tr: "Linux masaüstleri", pl: "Pulpity Linuksa" },
+      { en: "Psychological horror", tr: "Psikolojik korku", pl: "Horror psychologiczny" },
+      { en: "Night photography", tr: "Gece fotoğrafçılığı", pl: "Fotografia nocna" },
+      { en: "Building DerryOS", tr: "DerryOS geliştirmek", pl: "Budowanie DerryOS" }
     ]
   },
+
+
+  currentMedia: [
+    {
+      labelKey: "diaryGame",
+      route: "games",
+      title: "Metro 2033 Redux",
+      status: { en: "In Progress", tr: "Devam Ediyor", pl: "W Trakcie" },
+      note: {
+        en: "Tunnels, ideology and survival — a world reduced to stations, rumours and fragile light.",
+        tr: "Tüneller, ideoloji ve hayatta kalma — istasyonlara, söylentilere ve kırılgan ışığa indirgenmiş bir dünya.",
+        pl: "Tunele, ideologia i przetrwanie — świat zredukowany do stacji, pogłosek i kruchego światła."
+      }
+    },
+    {
+      labelKey: "diaryMovie",
+      route: "movies",
+      title: "Perfect Blue",
+      status: { en: "Recently Archived", tr: "Yakın Zamanda Arşivlendi", pl: "Niedawno Zarchiwizowany" },
+      note: {
+        en: "Identity watched until it fractures; the screen becomes a mirror that refuses to stay still.",
+        tr: "Kimlik parçalanana kadar izleniyor; ekran yerinde durmayı reddeden bir aynaya dönüşüyor.",
+        pl: "Tożsamość obserwowana aż do pęknięcia; ekran staje się lustrem, które nie chce pozostać nieruchome."
+      }
+    },
+    {
+      labelKey: "diarySeries",
+      route: "series",
+      title: "Serial Experiments Lain",
+      status: { en: "Archive Favourite", tr: "Arşiv Favorisi", pl: "Ulubione z Archiwum" },
+      note: {
+        en: "A quiet girl, a network, and the feeling that the digital self may be larger than the body.",
+        tr: "Sessiz bir kız, bir ağ ve dijital benliğin bedenden daha büyük olabileceği hissi.",
+        pl: "Cicha dziewczyna, sieć i poczucie, że cyfrowa jaźń może być większa od ciała."
+      }
+    }
+  ],
 
   dailyMusic: {
     provider: "spotify",
     title: {
-      en: "today's transmission",
-      tr: "bugünün yayını",
-      pl: "dzisiejsza transmisja"
+      en: "Today's Transmission",
+      tr: "Bugünün Yayını",
+      pl: "Dzisiejsza Transmisja"
     },
     artist: {
       en: "replace the Spotify link in content.js",
@@ -59,7 +96,7 @@ window.DERRY_CONTENT = {
   musicArchive: [
     {
       date: "2026-07-16",
-      title: { en: "first archived song", tr: "arşivlenen ilk şarkı", pl: "pierwsza zarchiwizowana piosenka" },
+      title: { en: "First Archived Song", tr: "Arşivlenen İlk Şarkı", pl: "Pierwsza Zarchiwizowana Piosenka" },
       artist: "add artist",
       note: {
         en: "Replace this entry with a song that belonged to the day.",
@@ -128,16 +165,16 @@ window.DERRY_CONTENT = {
       id: "reopening-the-archive",
       date: "2026-07-16",
       title: {
-        en: "reopening the archive",
-        tr: "arşivi yeniden açmak",
-        pl: "ponowne otwarcie archiwum"
+        en: "Reopening the Archive",
+        tr: "Arşivi Yeniden Açmak",
+        pl: "Ponowne Otwarcie Archiwum"
       },
       mood: { en: "restless", tr: "huzursuz", pl: "niespokojna" },
       tags: ["site", "diary", "old-web"],
       excerpt: {
-        en: "six months later, i came back to the room i abandoned online.",
-        tr: "altı ay sonra internette terk ettiğim odaya geri döndüm.",
-        pl: "sześć miesięcy później wróciłam do pokoju porzuconego w internecie."
+        en: "Six months later, I came back to the room I abandoned online.",
+        tr: "Altı ay sonra internette terk ettiğim odaya geri döndüm.",
+        pl: "Sześć miesięcy później wróciłam do pokoju porzuconego w internecie."
       },
       body: [
         {
@@ -160,16 +197,16 @@ window.DERRY_CONTENT = {
     {
       id: "untitled",
       date: "2026-01-02",
-      title: { en: "untitled", tr: "isimsiz", pl: "bez tytułu" },
+      title: { en: "Untitled", tr: "İsimsiz", pl: "Bez Tytułu" },
       mood: { en: "detached", tr: "kopuk", pl: "odłączona" },
       tags: ["memory", "fog"],
       excerpt: {
-        en: "i remember less, but feel heavier.",
-        tr: "daha az hatırlıyorum ama daha ağır hissediyorum.",
-        pl: "pamiętam mniej, ale czuję większy ciężar."
+        en: "I remember less, but feel heavier.",
+        tr: "Daha az hatırlıyorum ama daha ağır hissediyorum.",
+        pl: "Pamiętam mniej, ale czuję większy ciężar."
       },
       body: [
-        { en: "i remember less, but feel heavier.", tr: "daha az hatırlıyorum ama daha ağır hissediyorum.", pl: "pamiętam mniej, ale czuję większy ciężar." },
+        { en: "I remember less, but feel heavier.", tr: "Daha az hatırlıyorum ama daha ağır hissediyorum.", pl: "Pamiętam mniej, ale czuję większy ciężar." },
         { en: "memory does not disappear cleanly. it leaves stains where details used to be.", tr: "hafıza temiz biçimde kaybolmuyor. ayrıntıların olduğu yerde lekeler bırakıyor.", pl: "pamięć nie znika czysto. zostawia plamy tam, gdzie wcześniej były szczegóły." },
         { en: "sometimes the missing part becomes larger than the thing itself.", tr: "bazen eksik kalan parça, şeyin kendisinden daha büyük oluyor.", pl: "czasami brakująca część staje się większa od samej rzeczy." }
       ]
@@ -177,13 +214,13 @@ window.DERRY_CONTENT = {
     {
       id: "first-entry",
       date: "2025-12-30",
-      title: { en: "first entry", tr: "ilk kayıt", pl: "pierwszy wpis" },
+      title: { en: "First Entry", tr: "İlk Kayıt", pl: "Pierwszy Wpis" },
       mood: { en: "numb", tr: "hissiz", pl: "odrętwiała" },
       tags: ["existence", "silence", "record"],
       excerpt: {
-        en: "sometimes existing is enough.",
-        tr: "bazen yalnızca var olmak yeterlidir.",
-        pl: "czasami samo istnienie wystarcza."
+        en: "Sometimes existing is enough.",
+        tr: "Bazen yalnızca var olmak yeterlidir.",
+        pl: "Czasami samo istnienie wystarcza."
       },
       body: [
         { en: "sometimes existing is enough. not everything needs a reason.", tr: "bazen yalnızca var olmak yeterlidir. her şeyin bir sebebi olmak zorunda değil.", pl: "czasami samo istnienie wystarcza. nie wszystko potrzebuje powodu." },
@@ -311,7 +348,18 @@ window.DERRY_CONTENT = {
       { title: "Perfect Blue", year: "1997", status: { en: "favourite", tr: "favori", pl: "ulubiony" }, note: { en: "Identity watched until it breaks.", tr: "Kırılana kadar izlenen kimlik.", pl: "Tożsamość obserwowana aż do pęknięcia." } },
       { title: "The Blair Witch Project", year: "1999", status: { en: "archive", tr: "arşiv", pl: "archiwum" }, note: { en: "The forest as a system with rules nobody understands.", tr: "Kimsenin anlamadığı kuralları olan bir sistem olarak orman.", pl: "Las jako system z zasadami, których nikt nie rozumie." } }
     ],
-    series: []
+    series: [
+      {
+        title: "Serial Experiments Lain",
+        year: "1998",
+        status: { en: "Archive Favourite", tr: "Arşiv Favorisi", pl: "Ulubione z Archiwum" },
+        note: {
+          en: "The self inside the network, loneliness made electronic, and identity dissolving into connection.",
+          tr: "Ağın içindeki benlik, elektronikleşen yalnızlık ve bağlantının içinde çözülen kimlik.",
+          pl: "Jaźń wewnątrz sieci, samotność stająca się elektroniką i tożsamość rozpuszczająca się w połączeniu."
+        }
+      }
+    ]
   },
 
   characters: [
@@ -367,6 +415,15 @@ window.DERRY_CONTENT = {
   ],
 
   updates: [
+    {
+      date: "2026-07-16",
+      version: "v1.3.0",
+      text: {
+        en: "Fixed the stretched profile image, forced fresh CSS and JavaScript loading to prevent mixed cached versions, restored all eight archive rooms, and added a home-page media diary for Metro 2033 Redux, Perfect Blue and Serial Experiments Lain.",
+        tr: "Uzayan profil görseli düzeltildi; karışık önbellek sürümlerini engellemek için CSS ve JavaScript'in güncel dosyaları yüklemesi sağlandı; sekiz arşiv odası geri getirildi ve ana sayfaya Metro 2033 Redux, Perfect Blue ve Serial Experiments Lain için medya günlüğü eklendi.",
+        pl: "Naprawiono rozciągnięty obraz profilowy, wymuszono ładowanie świeżych plików CSS i JavaScript, przywrócono osiem pokoi archiwum oraz dodano na stronie głównej dziennik mediów dla Metro 2033 Redux, Perfect Blue i Serial Experiments Lain."
+      }
+    },
     {
       date: "2026-07-16",
       version: "v1.2.0",

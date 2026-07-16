@@ -1,4 +1,4 @@
-ABSOLUTEDERRY BLOG v1.2 — GITHUB UPLOAD
+ABSOLUTEDERRY BLOG v1.3 — GITHUB UPLOAD
 
 1. Open the AbsoluteDerry/absolutederry.github.io repository on GitHub.
 2. Click Add file > Upload files.
@@ -10,4 +10,6 @@ ABSOLUTEDERRY BLOG v1.2 — GITHUB UPLOAD
 
 Important: Upload the CONTENTS of this folder, not the folder itself.
 
-Suggested commit message: Revise personal archive v1.2
+Suggested commit message: Revise personal archive v1.3
+
+IMPORTANT: Upload and replace index.html, style.css, app.js, and content.js together. The version query in index.html forces browsers to use the new files.

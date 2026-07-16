@@ -74,7 +74,7 @@
       routeProjects: "Projects",
       routeNow: "Now",
       routeAbout: "About",
-      subtitleHome: "a personal archive for things that do not belong in a feed.",
+      subtitleHome: "A personal archive for things that do not belong in a feed.",
       subtitleJournal: "dated fragments, unfinished thoughts and records of being here.",
       subtitlePhotos: "the city after people stop looking at it.",
       subtitleLinux: "the machines i use, rebuild and occasionally break.",
@@ -89,23 +89,29 @@
       subtitleNow: "a small snapshot of what is happening in my life right now.",
       subtitleAbout: "this is not an introduction. it is a positioning.",
       readMeFirst: "read_me_first.txt",
-      roomNotFeed: "this is not a feed. this is a room.",
+      roomNotFeed: "This is not a feed. This is a room.",
       manifesto: "I keep photographs, operating systems, games, films, unfinished thoughts, music and fictional people here. Nothing is ranked. Nothing is optimised. Things appear because they mattered to me.",
       latestTransmission: "Latest Transmission",
       viewFullJournal: "View Full Journal",
       recentFragments: "Recent Fragments",
+      latestMediaDiary: "Latest Media Diary",
+      latestMediaDiarySubtitle: "The latest game, film and series entries preserved here.",
+      diaryGame: "Game Diary",
+      diaryMovie: "Movie Diary",
+      diarySeries: "Series + Anime Diary",
+      openDiary: "Open Diary →",
       roomsInArchive: "Rooms in the Archive",
-      portalPhotography: "night streets, monuments, witnesses",
-      portalLinux: "machines made personal",
+      portalPhotography: "Night streets, monuments, witnesses",
+      portalLinux: "Machines made personal",
       portalMedia: "Horror, ruins, memory",
       portalGames: "Finished, unfinished, remembered",
       portalMovies: "Frames that refused to disappear",
       portalSeries: "Episodes, seasons, animated worlds",
       portalGroupWatched: "Played / Watched / Captured",
       portalGroupMine: "My Rooms",
-      portalCharacters: "people i recognise from inside",
-      portalMusic: "a daily track and its remains",
-      portalLinks: "the rest of my internet",
+      portalCharacters: "People I recognise from inside",
+      portalMusic: "A daily track and its remains",
+      portalLinks: "The rest of my internet",
       openEntry: "Open Entry",
       moodPrefix: "Mood:",
       searchArchive: "Search Archive",
@@ -215,35 +221,41 @@
       routeProjects: "Projeler",
       routeNow: "Şimdi",
       routeAbout: "Hakkımda",
-      subtitleHome: "bir akışa ait olmayan şeyler için kişisel arşiv.",
-      subtitleJournal: "tarihli parçalar, yarım düşünceler ve burada oluşumun kayıtları.",
-      subtitlePhotos: "insanlar bakmayı bıraktıktan sonraki şehir.",
-      subtitleLinux: "kullandığım, yeniden kurduğum ve bazen bozduğum makineler.",
-      subtitleMedia: "ekran karardıktan sonra kalan hikâyeler, odalar ve görüntüler.",
-      subtitleCharacters: "karakterler bazen daha iyi aydınlatılmış aynalardır.",
-      subtitleMusic: "bugün için bir şarkı, tarihli anılar gibi saklanan eskiler.",
-      subtitleLinks: "internette var olduğum diğer yerlere açılan kapılar.",
-      subtitleProjects: "uyumak yerine geliştirdiğim şeyler.",
-      subtitleNow: "şu anda hayatımda olanların küçük bir görüntüsü.",
-      subtitleAbout: "bu bir tanışma değil. bir konumlandırma.",
+      subtitleHome: "Bir akışa ait olmayan şeyler için kişisel bir arşiv.",
+      subtitleJournal: "Tarihli parçalar, yarım düşünceler ve burada oluşumun kayıtları.",
+      subtitlePhotos: "İnsanlar bakmayı bıraktıktan sonraki şehir.",
+      subtitleLinux: "Kullandığım, yeniden kurduğum ve bazen bozduğum makineler.",
+      subtitleMedia: "Ekran karardıktan sonra kalan hikâyeler, odalar ve görüntüler.",
+      subtitleCharacters: "Karakterler bazen daha iyi aydınlatılmış aynalardır.",
+      subtitleMusic: "Bugün için bir şarkı, tarihli anılar gibi saklanan eskiler.",
+      subtitleLinks: "İnternette var olduğum diğer yerlere açılan kapılar.",
+      subtitleProjects: "Uyumak yerine geliştirdiğim şeyler.",
+      subtitleNow: "Şu anda hayatımda olanların küçük bir görüntüsü.",
+      subtitleAbout: "Bu bir tanışma değil. Bir konumlandırma.",
       readMeFirst: "önce_bunu_oku.txt",
-      roomNotFeed: "burası bir akış değil. bir oda.",
+      roomNotFeed: "Burası bir akış değil. Burası bir oda.",
       manifesto: "Fotoğrafları, işletim sistemlerini, oyunları, filmleri, yarım düşünceleri, müziği ve kurgusal insanları burada tutuyorum. Hiçbir şey sıralanmıyor. Hiçbir şey optimize edilmiyor. Şeyler yalnızca benim için önemli oldukları için burada.",
       latestTransmission: "Son Yayın",
       viewFullJournal: "Tüm Günlüğü Gör",
-      recentFragments: "yakın parçalar",
+      recentFragments: "Yakın Parçalar",
+      latestMediaDiary: "Güncel Medya Günlüğü",
+      latestMediaDiarySubtitle: "Burada saklanan en güncel oyun, film ve dizi kayıtları.",
+      diaryGame: "Oyun Günlüğü",
+      diaryMovie: "Film Günlüğü",
+      diarySeries: "Dizi + Anime Günlüğü",
+      openDiary: "Günlüğü Aç →",
       roomsInArchive: "Arşivdeki Odalar",
-      portalPhotography: "gece sokakları, anıtlar, tanıklar",
-      portalLinux: "kişiselleştirilmiş makineler",
+      portalPhotography: "Gece sokakları, anıtlar, tanıklar",
+      portalLinux: "Kişiselleştirilmiş makineler",
       portalMedia: "Korku, harabeler, hafıza",
       portalGames: "Bitirilen, yarım kalan, hatırlanan",
       portalMovies: "Kaybolmayı reddeden kareler",
       portalSeries: "Bölümler, sezonlar, animasyon dünyaları",
       portalGroupWatched: "Oynadıklarım / İzlediklerim / Çektiklerim",
       portalGroupMine: "Benim Odalarım",
-      portalCharacters: "içimde tanıdığım insanlar",
-      portalMusic: "günlük bir şarkı ve kalıntıları",
-      portalLinks: "internetimin geri kalanı",
+      portalCharacters: "İçimde tanıdığım insanlar",
+      portalMusic: "Günlük bir şarkı ve kalıntıları",
+      portalLinks: "İnternetimin geri kalanı",
       openEntry: "Kaydı Aç",
       moodPrefix: "Ruh Hâli:",
       searchArchive: "Arşivde Ara",
@@ -296,8 +308,8 @@
       skipToContent: "Przejdź do Treści",
       systemMessage: "Osobiste Archiwum Zamontowane Tylko do Odczytu",
       heroEyebrow: "WITAJ W MOIM ZAKĄTKU STAREGO INTERNETU",
-      heroTaglineA: "istnieć, nie żyć",
-      heroTaglineB: "obserwować, nie uczestniczyć",
+      heroTaglineA: "Istnieć, Nie Żyć",
+      heroTaglineB: "Obserwować, Nie Uczestniczyć",
       archive: "ARCHIWUM",
       online: "ONLINE",
       navHome: "Strona Główna",
@@ -353,38 +365,44 @@
       routeProjects: "Projekty",
       routeNow: "Teraz",
       routeAbout: "O Mnie",
-      subtitleHome: "osobiste archiwum dla rzeczy, które nie należą do feedu.",
-      subtitleJournal: "datowane fragmenty, niedokończone myśli i zapisy obecności.",
-      subtitlePhotos: "miasto po tym, jak ludzie przestają na nie patrzeć.",
-      subtitleLinux: "maszyny, których używam, przebudowuję i czasami psuję.",
+      subtitleHome: "Osobiste archiwum dla rzeczy, które nie należą do feedu.",
+      subtitleJournal: "Datowane fragmenty, niedokończone myśli i zapisy obecności.",
+      subtitlePhotos: "Miasto po tym, jak ludzie przestają na nie patrzeć.",
+      subtitleLinux: "Maszyny, których używam, przebudowuję i czasami psuję.",
       subtitleMedia: "Historie, pokoje i obrazy pozostałe po zgaśnięciu ekranu.",
       subtitleGames: "Gry ukończone, porzucone, odwiedzone ponownie lub zachowane w pamięci.",
       subtitleMovies: "Filmy, które pozostały widoczne po zgaśnięciu ekranu.",
       subtitleSeries: "Dłuższe historie i animowane światy zachowane w archiwum.",
-      subtitleCharacters: "postacie są czasem lustrami z lepszym światłem.",
-      subtitleMusic: "jedna piosenka na dziś, starsze zachowane jak datowane wspomnienia.",
-      subtitleLinks: "drzwi do innych miejsc, w których istnieję w internecie.",
-      subtitleProjects: "rzeczy, które buduję zamiast spać.",
-      subtitleNow: "mały obraz tego, co dzieje się teraz w moim życiu.",
-      subtitleAbout: "to nie przedstawienie się. to określenie pozycji.",
+      subtitleCharacters: "Postacie są czasem lustrami z lepszym światłem.",
+      subtitleMusic: "Jedna piosenka na dziś, starsze zachowane jak datowane wspomnienia.",
+      subtitleLinks: "Drzwi do innych miejsc, w których istnieję w internecie.",
+      subtitleProjects: "Rzeczy, które buduję zamiast spać.",
+      subtitleNow: "Mały obraz tego, co dzieje się teraz w moim życiu.",
+      subtitleAbout: "To nie przedstawienie się. To określenie pozycji.",
       readMeFirst: "przeczytaj_najpierw.txt",
-      roomNotFeed: "to nie jest feed. to jest pokój.",
+      roomNotFeed: "To nie jest feed. To jest pokój.",
       manifesto: "Trzymam tu fotografie, systemy operacyjne, gry, filmy, niedokończone myśli, muzykę i fikcyjne postacie. Nic nie jest rankingowane ani optymalizowane. Rzeczy pojawiają się, ponieważ były dla mnie ważne.",
       latestTransmission: "najnowsza transmisja",
       viewFullJournal: "zobacz cały dziennik",
-      recentFragments: "ostatnie fragmenty",
+      recentFragments: "Ostatnie Fragmenty",
+      latestMediaDiary: "Najnowszy Dziennik Mediów",
+      latestMediaDiarySubtitle: "Najnowsze wpisy o grze, filmie i serialu zachowane w archiwum.",
+      diaryGame: "Dziennik Gier",
+      diaryMovie: "Dziennik Filmów",
+      diarySeries: "Dziennik Seriali + Anime",
+      openDiary: "Otwórz Dziennik →",
       roomsInArchive: "Pokoje w Archiwum",
-      portalPhotography: "nocne ulice, pomniki, świadkowie",
-      portalLinux: "maszyny uczynione osobistymi",
+      portalPhotography: "Nocne ulice, pomniki, świadkowie",
+      portalLinux: "Maszyny uczynione osobistymi",
       portalMedia: "Horror, ruiny, pamięć",
       portalGames: "Ukończone, niedokończone, zapamiętane",
       portalMovies: "Kadry, które nie chciały zniknąć",
       portalSeries: "Odcinki, sezony, animowane światy",
       portalGroupWatched: "Grane / Oglądane / Fotografowane",
       portalGroupMine: "Moje Pokoje",
-      portalCharacters: "ludzie rozpoznani od środka",
-      portalMusic: "codzienny utwór i jego pozostałości",
-      portalLinks: "reszta mojego internetu",
+      portalCharacters: "Ludzie rozpoznani od środka",
+      portalMusic: "Codzienny utwór i jego pozostałości",
+      portalLinks: "Reszta mojego internetu",
       openEntry: "otwórz wpis",
       moodPrefix: "nastrój:",
       searchArchive: "przeszukaj archiwum",
@@ -568,6 +586,21 @@
     `;
   }
 
+  function currentMediaCard(entry) {
+    const route = entry.route || "games";
+    return `
+      <article class="panel current-media-card">
+        <div class="current-media-card__topline">
+          <span>${escapeHtml(t(entry.labelKey))}</span>
+          <span>${escapeHtml(localize(entry.status))}</span>
+        </div>
+        <h3>${escapeHtml(entry.title)}</h3>
+        <p>${escapeHtml(localize(entry.note))}</p>
+        <button class="read-more" type="button" data-view="${escapeHtml(route)}">${escapeHtml(t("openDiary"))}</button>
+      </article>
+    `;
+  }
+
   function renderHome() {
     const latest = content.posts[0];
     const recent = content.posts.slice(1, 3);
@@ -589,6 +622,15 @@
         <div class="section-heading"><h2>${escapeHtml(t("recentFragments"))}</h2></div>
         <div class="card-grid card-grid--two">${recent.map((post) => postCard(post)).join("")}</div>
       </section>
+      <section class="section-block media-diary-home">
+        <div class="section-heading section-heading--stacked">
+          <div>
+            <h2>${escapeHtml(t("latestMediaDiary"))}</h2>
+            <p>${escapeHtml(t("latestMediaDiarySubtitle"))}</p>
+          </div>
+        </div>
+        <div class="current-media-grid">${(content.currentMedia || []).map(currentMediaCard).join("")}</div>
+      </section>
       <section class="section-block">
         <div class="section-heading"><h2>${escapeHtml(t("roomsInArchive"))}</h2></div>
         <div class="portal-groups">
@@ -606,8 +648,8 @@
             <div class="portal-stack">
               <button class="portal panel" type="button" data-view="linux"><span>05</span><strong>${escapeHtml(t("routeLinux"))}</strong><small>${escapeHtml(t("portalLinux"))}</small></button>
               <button class="portal panel" type="button" data-view="characters"><span>06</span><strong>${escapeHtml(t("routeCharacters"))}</strong><small>${escapeHtml(t("portalCharacters"))}</small></button>
-              <button class="portal panel" type="button" data-view="links"><span>07</span><strong>${escapeHtml(t("routeLinks"))}</strong><small>${escapeHtml(t("portalLinks"))}</small></button>
-              <button class="portal panel" type="button" data-view="music"><span>08</span><strong>${escapeHtml(t("routeMusic"))}</strong><small>${escapeHtml(t("portalMusic"))}</small></button>
+              <button class="portal panel" type="button" data-view="music"><span>07</span><strong>${escapeHtml(t("routeMusic"))}</strong><small>${escapeHtml(t("portalMusic"))}</small></button>
+              <button class="portal panel" type="button" data-view="links"><span>08</span><strong>${escapeHtml(t("routeLinks"))}</strong><small>${escapeHtml(t("portalLinks"))}</small></button>
             </div>
           </section>
         </div>
